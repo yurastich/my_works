@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transportation</title>
+    <meta name="description" content="Loading Effects for Grid Items with CSS Animations"/>
+    <meta name="keywords" content="css animation, loading effect, google plus, grid items, masonry"/>
+    <meta name="author" content="Codrops"/>
+    <meta name="viewport" content="width=1230">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/openapi.js"></script>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header class="b-header">
+    <ul class="e-header-list">
+        <li class="e-header-item h-header-item-phone">
+            <span class="e-header-item-img-container"><img src="img/phone-header.png"></span>
+            <p class="e-header-item-text">+7 812 775 18 96</p>
+
+            <p class="e-header-item-text">+7 812 775 18 97</p>
+            <span class="e-header-item-text-detail">c 09:00 до 18:00</span>
+        </li>
+        <li class="e-header-item h-header-item-location">
+            <span class="e-header-item-img-container"><img src="img/location-header.png"></span>
+            <p class="e-header-item-text">192019, г. Санкт-Петербург</p>
+
+            <p class="e-header-item-text">ул. Седова, дом 5, корпус А, офис 344</p>
+        </li>
+        <li class="e-header-item h-header-item-left">
+            <span class="e-header-item-img-container"><img src="img/logo-header.png"></span>
+            <p class="e-header-item-text">ООО «ВЭД Логистик Северо-Запад»</p>
+
+            <p class="e-header-item-text">доставка грузов по Европе</p>
+        </li>
+    </ul>
+</header>
+<ul class="grid effect-6" id="grid">
+<li class="b-first">
+    <div class="b-container">
+        <div class="h-plane-container">
+            <h1 class="e-first-title">Доставка грузов по европе</h1>
+
+            <h2 class="e-first-subtitle">быстро и бережно перевезем все виды грузов от 1кг без ограничения по объему любым видом транспорта</h2>
+
+            <div class="e-first-plane">
+                <img src="img/plane.png"/>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="b-items">
+    <div class="b-title">
+        <h2 class="e-title">перевозки</h2>
+    </div>
+    <div class="b-container-sm">
+        <ul class="e-items-list">
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/1.png"></span>
+                </div>
+                <p class="e-items-title">автомобильные</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/2.png"></span>
+                </div>
+                <p class="e-items-title">железнодорожные</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/3.png"></span>
+                </div>
+                <p class="e-items-title">морские</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/4.png"></span>
+                </div>
+                <p class="e-items-title">воздушные</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/5.png"></span>
+                </div>
+                <p class="e-items-title">контейнерные</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/6.png"></span>
+                </div>
+                <p class="e-items-title">мультимодальные
+                                         интермодальные</p>
+            </li>
+        </ul>
+    </div>
+</li>
+<li class="b-trains">
+    <div class="b-container-sm">
+        <div class="b-title">
+            <h2 class="e-title">ТРАНСПОРТИРУЕМ ЛЮБЫЕ ВИДЫ ГРУЗОВ</h2>
+        </div>
+        <div class="e-trains-list">
+            <div class="e-trains-item">
+                <p class="e-trains-title">Тяжеловесные</p>
+
+                <p class="e-trains-text">спецтехника,
+                                         оборудование</p>
+            </div>
+            <div class="e-trains-item">
+                <p class="e-trains-title">Негабаритные</p>
+
+                <p class="e-trains-text">грузы, которые
+                                         превышают
+                                         размеры
+                                         транспортного
+                                         средства</p>
+            </div>
+            <div class="e-trains-item">
+                <p class="e-trains-title">Малогабаритные</p>
+
+                <p class="e-trains-text">массой от 1 кг,
+                                         объемом до 1 м3</p>
+            </div>
+            <div class="e-trains-item">
+                <p class="e-trains-title">Опасные (ADR)</p>
+
+                <p class="e-trains-text">грузы с 4 по 9
+                                         класс опасности</p>
+            </div>
+            <div class="e-trains-item">
+                <p class="e-trains-title">Сложные
+                                          (сборные)</p>
+
+                <p class="e-trains-text">консолидация
+                                         малогабаритных
+                                         грузов</p>
+            </div>
+            <div class="e-trains-item">
+                <p class="e-trains-title">Комплектные</p>
+
+                <p class="e-trains-text">занимают большую
+                                         часть кузова</p>
+            </div>
+            <div class="e-trains-item">
+                <p class="e-trains-title">Скоропортящиеся</p>
+
+                <p class="e-trains-text">мороженные,
+                                         охлажденные,
+                                         свежие</p>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="b-country">
+    <div class="b-container">
+        <div class="b-title">
+            <h2 class="e-title">вся европа как на ладони</h2>
+
+            <p class="e-subtitle">доставка в максимально сжатые сроки - наш конёк</p>
+        </div>
+        <div class="e-country-list">
+            <div class="e-country-item">
+                <p class="e-country-item-text q">Австрия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text w">Дания</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text qw">Литва</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text e">Словакия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text r">Бельгия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text t">Италия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text y">Мальта</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text u">Франция</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text i">Болгария</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text o">Ирландия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text p">Нидерланды</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text s">Финляндия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text d">Венгрия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text f">Испания</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text g">Португалия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text h">Хорватия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text j">Великобритания</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text k">Кипр</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text l">Польша</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text z">Чехия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text x">Греция</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text c">Люксембург</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text v">Румыния</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text b">Швеция</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text n">Германия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text m">Латвия</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text mn">Словения</p>
+            </div>
+            <div class="e-country-item">
+                <p class="e-country-item-text nb">Эстония</p>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="b-items h-items-second">
+    <div class="b-title">
+        <h2 class="e-title">с нами уже сотрудничают</h2>
+
+        <p class="e-subtitle">множество компаний различной направленности</p>
+    </div>
+    <div class="b-container-sm">
+        <ul class="e-items-list">
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/7.png"></span>
+                </div>
+                <p class="e-items-title">интернет-магазины</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/8.png"></span>
+                </div>
+                <p class="e-items-title">торговые компании</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/9.png"></span>
+                </div>
+                <p class="e-items-title">производственные
+                                         предприятия</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/10.png"></span>
+                </div>
+                <p class="e-items-title">строительные компании</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/11.png"></span>
+                </div>
+                <p class="e-items-title">предприятия топливной
+                                         промышленности</p>
+            </li>
+            <li class="e-items-item">
+                <div class="e-items-img-container">
+                    <span><img src="img/12.png"></span>
+                </div>
+                <p class="e-items-title">предприятия химической
+                                         промышленности</p>
+            </li>
+        </ul>
+    </div>
+</li>
+<li class="b-maps">
+    <div class="b-title">
+        <h2 class="e-title">просто позвоните</h2>
+
+        <p class="e-subtitle">или заезжайте на чашку кофе</p>
+    </div>
+
+    <div class="b-container">
+        <div class="e-maps-container">
+            <div class="e-maps-content">
+                <p class="e-maps-content-text h-maps-content-text-another">ООО "ВЭД Логистик Северо-Запад"</p>
+
+                <p class="e-maps-content-text">ИНН 7811218843</p>
+
+                <p class="e-maps-content-text">ОГРН 1157847253189</p>
+            </div>
+            <div class="e-maps-content">
+                <p class="e-maps-content-text">192019, г. Санкт-Петербург</p>
+
+                <p class="e-maps-content-text">ул. Седова, дом 5, корпус А, офис 344</p>
+            </div>
+            <div class="e-maps-content">
+                <p class="e-maps-content-text">Телефоны:</p>
+
+                <p class="e-maps-content-text">
+                    <a href="tel:+7 812 775 18 96">+7 812 775 18 96</a>
+                </p>
+
+                <p class="e-maps-content-text">
+                    <a href="tel:+7 812 775 18 97">+7 812 775 18 97</a>
+                </p>
+            </div>
+            <div class="e-maps-content">
+                <p class="e-maps-content-text">Факс:</p>
+
+                <p class="e-maps-content-text">+7 812 347 78 97</p>
+            </div>
+            <div class="e-maps-content">
+                <p class="e-maps-content-text">График работы:</p>
+
+                <p class="e-maps-content-text">по будням с 09:00 до 18:00</p>
+            </div>
+        </div>
+        <div class="e-maps-vk">
+            <div id="vk_groups"></div>
+            <script type="text/javascript">
+                VK.Widgets.Group("vk_groups", {
+                    mode: 0,
+                    width: "384",
+                    height: "347",
+                    color1: 'FFFFFF',
+                    color2: 'be1d2c',
+                    color3: 'be1d2c'
+                }, 100718068);
+            </script>
+        </div>
+    </div>
+    <div id="YMapsID" style="width:100%;height:778px"></div>
+</li>
+<li class="b-footer">
+    <a href="#" class="e-footer-logo">
+        <img src="img/footer-logo.png">
+    </a>
+</li>
+</ul>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/AnimOnScroll.js"></script>
+<script>
+    new AnimOnScroll(document.getElementById('grid'), {
+        minDuration: 0.4,
+        maxDuration: 0.7,
+        viewportFactor: 0.2
+    });
+</script>
+</body>
+</html>

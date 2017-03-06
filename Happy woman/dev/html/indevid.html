@@ -1,0 +1,108 @@
+@@include('components/group/top.html')
+<section class="bg-fix">
+  @@include('components/header.html')
+  @@include('components/first-screen.html', {
+    "image": "bg-top.png",
+    "title": "ХОТИТЕ ЧТОБЫ Я ЛИЧНО ПОРАБОТАЛА С ВАМИ?",
+    "subtitle": "<h3 class='e-first-subtitle'>тогда внимательно прочитайте эту страничку</h3>",
+    "page": "indevid"
+  })
+  <div id="g1" class="b-goods-block m-goods-block-first">
+    @@include('components/detail.html',{
+    "title":"Индивидуальная консультация",
+    "cost":"100$",
+    "underButton":"Чтобы записаться на консультацию, заполните анкету:"
+    })
+  </div>
+</section>
+<div id="g2" class="b-goods-block m-goods-block-bg">
+  @@include('components/detail.html',{
+  "title":"30-ти дневный личный коучинг",
+  "cost":"980$",
+  "underButton":"Заполните анкету, чтобы подать заявку на личный коучинг:"
+  })
+</div>
+<section class="bg-fix">
+  <div id="g3" class="b-goods-block">
+    @@include('components/detail.html',{
+    "title":"60-ти дневный личный коучинг",
+    "cost":"3000$",
+    "underButton":"Заполните анкету, чтобы подать заявку на личный коучинг:"
+    })
+  </div>
+</section>
+<div id="anc" class="b-goods-block m-goods-block-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2 class="b-t">Анкета для индивидуальной работы:</h2>
+        <div class="b-question-block">
+          <form action="submit">
+            <ul class="b-question-list">
+              @@loop('components/question-item.html', [
+              {
+              "text":"Опишите свою проблему, которую вы хотите решить пройдя коучинг."
+              },
+              {
+              "text":"Почему до сих пор у вас нет результата в этой сфере ( ваше мнение)."
+              },
+              {
+              "text":"Что вы уже делали,чтобы решить данный запрос."
+              },
+              {
+              "text":"Напишите от 0 до 10 уровень несогласия с данной ситуацией ( нет сил больше так жить – жгучее желание изменить ситуацию)"
+              },
+              {
+              "text":"Сколько минут или часов в день вы готовы инвестировать в развитие новых качеств и навыков, которые помогут изменить жизнь."
+              },
+              {
+              "text":"Работали ли вы с ментором (личным наставником) и какие у вас были результаты."
+              },
+              {
+              "text":"Какую вторичную выгоду вы получаете не достигая результата?"
+              },
+              {
+              "text":"Уровень образования в сфере, которую вы хотите улучшить: есть высшее образование, проходила тренинги, нету специального образования."
+              },
+              {
+              "text":"Чью модель отношений вы используете и реализуете: родителей, друзей или кого то другого."
+              },
+              {
+              "text":"Напишите 3 осн мысли, почему вы считаете,что коучинг со Светланой Нагородной вам способен помочь решить желаемый запрос."
+              }
+              ])
+            </ul>
+            <div class="b-question-form">
+              <div class="b-input-container">
+                <input type="text" class="b-input" placeholder="Ваше имя">
+              </div>
+              <div class="b-input-container">
+                <input type="email" class="b-input" placeholder="Email">
+              </div>
+              <div class="b-input-container">
+                <input type="text" class="b-input" name="num"
+                       placeholder="Телефон в международном формате">
+              </div>
+              <div class="b-input-container">
+                <input type="text" class="b-input" placeholder="Skype">
+              </div>
+              <button type="submit" class="b-button m-button-sm m-100">
+                                <span class="e-button-container anim">
+                                                                    <span class="t"><span class="c"><span
+                                                                      class="e-button-text"><span
+                                                                      class="e-button-text-b">ОТПРАВИТЬ АНКЕТУ</span></span></span></span>
+                                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="bg-fix">
+  @@include('components/form-last.html')
+</section>
+
+@@include('components/group/bottom.html')

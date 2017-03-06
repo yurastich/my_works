@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebMix</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css"
+          media="screen"/>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css"
+          media="screen"/>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="b-modal-window"></div>
+
+
+<header class="b-header">
+    <div class="h-header-nav">
+        <div class="b-container">
+            <nav class="e-header-navigation">
+                <ul class="e-header-list">
+                    <li class="e-header-item active">
+                        <a href="#1">Наш профиль</a>
+                    </li>
+                    <li class="e-header-item">
+                        <a href="#3">Работы</a>
+                    </li>
+                    <li class="e-header-item">
+                        <a href="#4">Партнеры</a>
+                    </li>
+                    <li class="e-header-item">
+                        <a href="img/price.jpg" download="download">Прайс</a>
+                    </li>
+                    <li class="e-header-item">
+                        <a href="#5">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="b-logo h-gray-light-bg">
+        <a href="#">
+            <img src="img/logo.png">
+        </a>
+    </div>
+</header>
+<section id="1" class="b-web-group">
+    <div class="b-container">
+        <div id="question" class="b-question">
+            <form action="submit" class="e-question-form" id="main-application">
+                <div class="e-question-label-container">
+                    <a href="#" class="e-question-logo">
+                        <img src="img/logo-sm.png">
+                    </a>
+                    <label for="q1" class="e-question-label">ФИО</label>
+                    <label for="w1" class="e-question-label">Телефон</label>
+                    <label for="e1" class="e-question-label">E-mail</label>
+                    <label for="r1" class="e-question-label">Ваш вопрос</label>
+                </div>
+                <div class="e-question-input-container">
+                    <div class="e-close-question"></div>
+                    <div class="h-container-input">
+                        <h1 class="e-question-title">Задайте ваш вопрос</h1>
+                        <p class="e-question-title-ok"></p>
+                        <input type="hidden" name="subject" value="Заявка с главной">
+                        <input type="text" required id="q1" name="username" class="e-question-input">
+                        <input type="text" required id="w1" name="userphone" class="e-question-input phone">
+                        <input type="email" required id="e1" name="useremail" class="e-question-input">
+                        <textarea id="r1" rows="6" name="message" class="e-question-input"></textarea>
+                        <input type="submit" class="e-question-submit">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="e-web-group-left">
+            <h1 class="e-web-group-left-title">Объединенная группа</h1>
+
+            <h1 class="e-web-group-left-title">технических специалистов в сфере</h1>
+
+            <h1 class="e-web-group-left-title">web - разработок для Вашего бизнеса</h1>
+
+            <div class="h-subtitle-container">
+                <h2 class="e-web-group-left-subtitle">Мы поможем Вам подобрать подходящего</h2>
+
+                <h2 class="e-web-group-left-subtitle">специалиста и ответить на все интересующие</h2>
+
+                <h2 class="e-web-group-left-subtitle">Вас вопросы в короткие сроки.</h2>
+            </div>
+
+
+                <button class="b-button modal">
+                    <a href="">Заказать</a>
+                </button>
+
+        </div>
+        <div class="e-web-group-right">
+            <ul class="e-web-group-right-list">
+                <li class="e-web-group-right-item">
+                    <img src="img/1.jpg">
+                </li>
+                <li class="e-web-group-right-item">
+                    <img src="img/2.jpg">
+                </li>
+                <li class="e-web-group-right-item">
+                    <img src="img/3.jpg">
+                </li>
+            </ul>
+            <ul class="e-web-group-right-list h-web-group-list-right">
+                <li class="e-web-group-right-item">
+                    <img src="img/4.jpg">
+                </li>
+                <li class="e-web-group-right-item">
+                    <img src="img/5.jpg">
+                </li>
+                <li class="e-web-group-right-item">
+                    <img src="img/6.jpg">
+                </li>
+            </ul>
+            <ul class="e-web-group-right-list">
+                <li class="e-web-group-right-item">
+                    <img src="img/7.jpg">
+                </li>
+                <li class="e-web-group-right-item">
+                    <img src="img/8.jpg">
+                </li>
+                <li class="e-web-group-right-item">
+                    <img src="img/9.jpg">
+                </li>
+            </ul>
+            <ul class="e-web-group-right-list h-web-group-list-right">
+                <li class="e-web-group-right-item">
+                    <img src="img/10.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="2" class="b-specifics">
+    <div class="b-container">
+        <h1 class="e-specifics-title">СПЕЦИФИКА НАШИХ РАБОТ</h1>
+
+        <h2 class="e-specifics-subtitle">Здесь вы можете найти нужного Вам специалиста</h2>
+        <ul class="e-specifics-list">
+            <li class="e-specifics-item h-another-item">
+                <div class="e-list-img">
+                    <span><img src="img/work-img-1-hover.jpg"></span>
+                </div>
+                <div class="e-img-content">
+                    <p class="text">Оnline - реклама</p>
+                    <span class="text-more"><span>П</span>одробнее</span>
+                </div>
+            </li>
+            <li class="e-specifics-item">
+                <div class="e-list-img">
+                    <span><img src="img/work-img-2.png"></span>
+                </div>
+                <h1 class="img-title">Web Мастер</h1>
+
+                <div class="e-img-content">
+                    <p class="text">Вселяют душу и заставляют
+                                    двигаться, то что раньше
+                                    казалось недвижемым</p>
+                </div>
+            </li>
+            <li class="e-specifics-item">
+                <div class="e-list-img">
+                    <span><img src="img/work-img-3.png"></span>
+                </div>
+                <h1 class="img-title">web Дизайн</h1>
+
+                <div class="e-img-content">
+                    <p class="text">Web дизайн, 3D- дизайн,
+                                    дизайн полиграфии, графика,
+                                    фирменный стиль</p>
+                </div>
+            </li>
+            <li class="e-specifics-item">
+                <div class="e-list-img">
+                    <span><img src="img/work-img-4.png"></span>
+                </div>
+                <h1 class="img-title">Аналитика</h1>
+
+                <div class="e-img-content">
+                    <p class="text">Анализ и расчет эффективных
+                                    рекламных компаний,
+                                    анализ конкурентной среды. </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section id="3" class="b-masonry">
+    <div class="b-container">
+        <h1 class="b-title">
+            <span>Работы наших специалистов</span>
+        </h1>
+        <h2 class="b-subtitle">Здесь вы найдете уникальные работы наши специалистов </h2>
+        </h2>
+    </div>
+    <ul class="e-masonry-list">
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-1.jpg" class="item-link fancybox">
+                <img src="img/portfolio-1.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-2.jpg" class="item-link fancybox">
+                <img src="img/portfolio-2.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-3.jpg" class="item-link fancybox">
+                <img src="img/portfolio-3.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-4.jpg" class="item-link fancybox">
+                <img src="img/portfolio-4.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-5.jpg" class="item-link fancybox">
+                <img src="img/portfolio-5.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-6.jpg" class="item-link fancybox">
+                <img src="img/portfolio-6.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-7.jpg" class="item-link fancybox">
+                <img src="img/portfolio-7.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-8.jpg" class="item-link fancybox">
+                <img src="img/portfolio-8.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-9.jpg" class="item-link fancybox">
+                <img src="img/portfolio-9.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-10.jpg" class="item-link fancybox">
+                <img src="img/portfolio-10.jpg">
+            </a>
+        </li>
+        <li class="e-masonry-item">
+            <a rel="group" href="img/portfolio-11.jpg" class="item-link fancybox">
+                <img src="img/portfolio-11.jpg">
+            </a>
+        </li>
+    </ul>
+</section>
+<section id="4" class="b-slider">
+    <div class="b-container">
+        <h1 class="b-title">
+            <span>ПАРТНЕРЫ</span>
+        </h1>
+        <h2 class="b-subtitle">Данные компании пользовались услугами наших специалистов и остались довольны</h2>
+        </h2>
+        <div class="h-button-container">
+            <button class="goToPrevSlide"></button>
+            <button class="goToNextSlide"></button>
+            <div class="h-slider-container">
+                <ul id="lightSlider" class="e-slider-list">
+                    <li class="e-slider-item">
+                        <a href="#">
+                            <img src="img/partners-1.jpg">
+                        </a>
+                    </li>
+                    <li class="e-slider-item">
+                        <a href="#">
+                            <img src="img/partners-2.jpg">
+                        </a>
+                    </li>
+                    <li class="e-slider-item">
+                        <a href="#">
+                            <img src="img/NOKIA.png">
+                            <!--<img src="img/partners-3.jpg">-->
+                        </a>
+                    </li>
+                    <li class="e-slider-item">
+                        <a href="#">
+                            <img src="img/partners-4.jpg">
+                        </a>
+                    </li>
+                    <li class="e-slider-item">
+                        <a href="#">
+                            <img src="img/partners-5.jpg">
+                        </a>
+                    </li>
+                    <li class="e-slider-item">
+                        <a href="#">
+                            <img src="img/partners-6.jpg">
+                        </a>
+                    </li>
+                    <li class="e-slider-item">
+                        <a href="#">
+                            <img src="img/partners-7.jpg">
+                        </a>
+                    </li>
+                    <li class="e-slider-item">
+                        <a href="#">
+                            <img src="img/partners-8.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="b-container">
+    <div class="b-question h-question-bottom">
+        <form action="submit" id="order-call" class="e-question-form">
+            <div class="e-question-label-container">
+                <a href="#" class="e-question-logo">
+                    <img src="img/logo-sm.png">
+                </a>
+                <label for="qq1" class="e-question-label">ФИО</label>
+                <label for="wq1" class="e-question-label">Телефон</label>
+                <label for="eq1" class="e-question-label">E-mail</label>
+                <label for="rq1" class="e-question-label">Ваш вопрос</label>
+            </div>
+            <div class="e-question-input-container">
+                <div class="e-close-question"></div>
+                <div class="h-container-input">
+                    <h1 class="e-question-title">Задайте ваш вопрос</h1>
+                    <p class="e-question-title-ok"></p>
+                    <input type="hidden" name="subject" value="Заказ звонка">
+                    <input type="text" required id="qq1" name="username" class="e-question-input">
+                    <input type="text" required id="wq1" name="userphone" class="e-question-input phone">
+                    <input type="email" required id="eq1" name="useremail" class="e-question-input">
+                    <textarea id="rq1" rows="6" name="message" class="e-question-input"></textarea>
+                    <input type="submit" class="e-question-submit">
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<section id="5" class="b-maps">
+    <div class="b-maps-detail">
+        <h1 class="e-maps-title">Контакты</h1>
+
+        <div class="h-container-left"></div>
+        <div class="h-container-right"></div>
+        <div class="e-maps-container">
+            <div class="e-maps-icon">
+                <i class="fa fa-users"></i>
+            </div>
+            <p class="e-maps-text">Адресс:</p>
+
+            <p class="e-maps-text">г.Серпухов,пос. Большевик
+                                   ул.Ленина 112 оф.38</p>
+
+
+                <button class="e-maps-button modal h-question-bottom-button">Заказать звонок</button>
+
+        </div>
+    </div>
+    <div id="YMapsID" style="width:100%;height:423px"></div>
+</section>
+<footer class="b-footer">
+    <div class="b-container">
+        <div class="b-question h-footer-question">
+            <form action="submit" id="write-us" class="e-question-form">
+                <div class="e-question-label-container">
+                    <a href="#" class="e-question-logo">
+                        <img src="img/logo-sm.png">
+                    </a>
+                    <label for="qw1" class="e-question-label">ФИО</label>
+                    <label for="ww1" class="e-question-label">Телефон</label>
+                    <label for="ew1" class="e-question-label">E-mail</label>
+                    <label for="rw1" class="e-question-label">Ваш вопрос</label>
+                </div>
+                <div class="e-question-input-container">
+                    <div class="e-close-question"></div>
+                    <div class="h-container-input">
+                        <h1 class="e-question-title">Задайте ваш вопрос</h1>
+                        <p class="e-question-title-ok"></p>
+                        <input type="hidden" name="subject" value="Написать Нам">
+                        <input type="text" required id="qw1" name="username" class="e-question-input">
+                        <input type="text" required id="ww1" name="userphone" class="e-question-input phone">
+                        <input type="email" required id="ew1" name="useremail" class="e-question-input">
+                        <textarea id="rw1" rows="6" name="message" class="e-question-input"></textarea>
+                        <input type="submit" class="e-question-submit">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <ul class="e-footer-list">
+            <li class="e-footer-item h-footer-item-right">
+                <h1 class="list-title">Контактная информация</h1>
+                <ul class="b-list-feedback">
+                    <li class="e-item-feedback h-item-feedback-phone">
+                        <span class="b-item-icon"><i class="fa fa-whatsapp"></i></span>
+                        <span class="item-icon-text">Phone:</span>
+                        <p class="item-text">
+                            <span>+7(915)-081-67-60</span>
+                            <span>+38 045 845-45-79</span>
+                        </p>
+                    </li>
+                    <li class="e-item-feedback">
+                        <span class="b-item-icon"><i class="fa fa-envelope"></i></span>
+                        <span class="item-icon-text">E-mail:</span>
+                        <p class="item-text">
+                            <span>info@wbmix.ru</span>
+                        </p>
+                    </li>
+                    <li class="e-item-feedback">
+                        <span class="b-item-icon"><i class="fa fa-skype"></i></span>
+                        <span class="item-icon-text">Skype:</span>
+                        <p class="item-text">
+                            <span>info_webmix</span>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="e-footer-item h-footer-item-left">
+                <h1 class="list-title">О нас</h1>
+
+                <p class="list-text">Наша компания специализируется на предоставлении
+                                     услуг по разработке, продвижению сайтов, ведению
+                                     рекламных компаний и ряда других web-услуг для малого
+                                     и среднего бизнеса. Наш подход индивидуален к каждому
+                                     клиенту, но за счет наработанных решений мы можем
+                                     предлагать уже готовые, удобные и главное рабочие услуги</p>
+                <button class="b-button modal">
+                    <a href="#">Написать нам</a>
+                </button>
+            </li>
+            <li class="e-footer-item h-footer-item-center">
+                <h1 class="list-title">Задать вопрос</h1>
+
+                <p class="list-text">Вы можете задать свой вопрос специалисту
+                                     прямо сейчас</p>
+
+                <form action="submit" id="form-question" class="b-form">
+                    <input type="text" name="message" class="e-form-input">
+                    <button type="submit" class="e-form-submit">
+                        <i class="fa fa-envelope-o"></i>
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="e-footer-bottom">
+        <div class="b-container">
+            <nav class="e-footer-bottom-navigation">
+                <ul class="e-footer-bottom-list">
+                    <li class="e-footer-bottom-item">
+                        <a href="#1">Наш профиль</a>
+                    </li>
+                    <li class="e-footer-bottom-item">
+                        <a href="#3">Работы</a>
+                    </li>
+                    <li class="e-footer-bottom-item">
+                        <a href="#4">Партнеры</a>
+                    </li>
+                    <li class="e-footer-bottom-item">
+                        <a href="img/price.jpg" download="download">Прайс</a>
+                    </li>
+                    <li class="e-footer-bottom-item">
+                        <a href="#5">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="e-footer-bottom-copyright">Copyright 2013 - WebSite.com - All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

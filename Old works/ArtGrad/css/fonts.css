@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "GloberBook";
+    src:         url("../fonts/GloberBook.eot");
+    src:         url("../fonts/GloberBook.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/GloberBook.woff") format("woff"),
+                 url("../fonts/GloberBook.ttf") format("truetype"),
+                 url("../fonts/GloberBook.svg") format("svg");
+    font-style:  normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Glober";
+    src:         url("../fonts/Fontfabric - GloberRegular.eot");
+    src:         url("../fonts/Fontfabric - GloberRegular.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/Fontfabric - GloberRegular.woff") format("woff"),
+                 url("../fonts/Fontfabric - GloberRegular.ttf") format("truetype"),
+                 url("../fonts/Fontfabric - GloberRegular.svg") format("svg");
+    font-style:  normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Glober";
+    src:         url("../fonts/GloberRegularItalic.eot");
+    src:         url("../fonts/GloberRegularItalic.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/GloberRegularItalic.woff") format("woff"),
+                 url("../fonts/GloberRegularItalic.ttf") format("truetype"),
+                 url("../fonts/GloberRegularItalic.svg") format("svg");
+    font-style:  italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Glober";
+    src:         url("../fonts/GloberSemiBold.eot");
+    src:         url("../fonts/GloberSemiBold.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/GloberSemiBold.woff") format("woff"),
+                 url("../fonts/GloberSemiBold.ttf") format("truetype"),
+                 url("../fonts/GloberSemiBold.svg") format("svg");
+    font-style:  normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Glober";
+    src:         url("../fonts/GloberSemiBoldItalic.eot");
+    src:         url("../fonts/GloberSemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/GloberSemiBoldItalic.woff") format("woff"),
+                 url("../fonts/GloberSemiBoldItalic.ttf") format("truetype"),
+                 url("../fonts/GloberSemiBoldItalic.svg") format("svg");
+    font-style:  italic;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Glober";
+    src:         url("../fonts/Fontfabric - GloberBold.eot");
+    src:         url("../fonts/Fontfabric - GloberBold.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/Fontfabric - GloberBold.woff") format("woff"),
+                 url("../fonts/Fontfabric - GloberBold.ttf") format("truetype"),
+                 url("../fonts/Fontfabric - GloberBold.svg") format("svg");
+    font-style:  normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "PFDinTextCompPro";
+    src:         url("../fonts/PFDinTextCompPro-Medium.eot");
+    src:         url("../fonts/PFDinTextCompPro-Medium.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/PFDinTextCompPro-Medium.woff") format("woff"),
+                 url("../fonts/PFDinTextCompPro-Medium.ttf") format("truetype"),
+                 url("../fonts/PFDinTextCompPro-Medium.svg") format("svg");
+    font-style:  normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "DINCondensedC";
+    src:         url("../fonts/DINCondensedC.eot");
+    src:         url("../fonts/DINCondensedC.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/DINCondensedC.woff") format("woff"),
+                 url("../fonts/DINCondensedC.ttf") format("truetype"),
+                 url("../fonts/DINCondensedC.svg") format("svg");
+    font-style:  normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Pribambas";
+    src:         url("../fonts/Pribambas.eot");
+    src:         url("../fonts/Pribambas.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/Pribambas.woff") format("woff"),
+                 url("../fonts/Pribambas.ttf") format("truetype"),
+                 url("../fonts/Pribambas.svg") format("svg");
+    font-style:  normal;
+    font-weight: normal;
+}

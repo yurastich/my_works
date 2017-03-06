@@ -1,0 +1,31 @@
+body, ul, p, h1, h2, a, button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none; }
+
+button {
+  color: inherit;
+  background-color: transparent; }
+  button a {
+    display: block; }
+
+a {
+  color: inherit; }
+
+img {
+  width: 100%; }
+
+.h-fix-inline-block {
+  font-size: 0; }
+
+input, textarea, select {
+  -webkit-appearance: none !important;
+  -webkit-border-radius: 0 !important; }
+
+html {
+  -webkit-text-size-adjust: none; }
+
+/*# sourceMappingURL=mixins.css.map */

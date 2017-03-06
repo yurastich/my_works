@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Price</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style/lightslider.css">
+    <link rel="stylesheet" href="style/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<!-- Loader -->
+<div id="loader">
+    <div class="loader-icon fa fa-spin colored-border"></div>
+</div>
+<!-- Loader end -->
+<!-- Content -->
+<div class="b-wrap b-wrap-price m-wrap-one-price">
+<div class="b-overlay"></div>
+<!-- Top block with title -->
+<header class="b-header">
+    <div class="e-header-right-content">
+        <nav class="b-navigation">
+            <ul class="e-navigation-list">
+                <li class="e-navigation-item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Возможности</a>
+                </li>
+                <li class="e-navigation-item active">
+                    <a href="#">Цены</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Компания</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="m-popup-container">
+            <button class="b-button m-button-register-header js-popup-login">
+                <p class="e-button-title">Войти</p>
+            </button>
+            <div class="b-login-popup material-box-neutral">
+                <div class="e-login-popup-container">
+                    <h2 class="e-login-title">Войдите</h2>
+
+                    <form action="submit" class="e-login-popup-form">
+                        <input type="email" placeholder="Емейл" class="e-login-input m-login-input-email">
+                        <input type="text" placeholder="Пароль" class="e-login-input m-login-input-password">
+                        <div class="b-checkbox">
+                            <input type="checkbox" id="remember-me" class="e-checkbox-check">
+                            <label for="remember-me" class="e-checkbox-checkbox-view"></label>
+                            <label for="remember-me" class="e-checkbox-text">Запомнить меня</label>
+                        </div>
+                        <button type="submit" class="b-button m-button-login material-box-neutral">
+                            <p class="e-button-title">Войти</p>
+                        </button>
+                    </form>
+                    <a href="#" class="e-login-link">Забыли пароль? Нажмите здесь</a>
+                </div>
+                <button class="b-button m-button-without-register js-without-register">
+                    <p class="e-button-title">Еще не зарегистрированы?</p>
+                </button>
+
+            </div>
+        </span>
+        <button class="b-button m-button-login m-button-login-two-lines material-box-neutral">
+            <a href="#">
+                <p class="e-button-title">Попробовать</p>
+
+                <p class="e-button-subtitle">бесплатно 30 дней</p>
+            </a>
+        </button>
+        <ul class="b-languages-list">
+            <li class="e-languages-item material-box-neutral active">
+                <a href="#">
+                    <img src="images/flag-rus.png">
+                </a>
+            </li>
+            <li class="e-languages-item material-box-neutral">
+                <a href="#">
+                    <img src="images/flag-gb.png">
+                </a>
+            </li>
+            <li class="e-languages-item material-box-neutral">
+                <a href="#">
+                    <img src="images/flag-uk.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="e-header-logo">
+        <a href="#" class="e-header-logo-img-container">
+            <img src="images/crmtronic-logo-new.png">
+        </a>
+    </div>
+    <button class="e-menu-button js-header-menu">
+        <i class="fa fa-bars"></i>
+    </button>
+</header>
+<div class="b-popup m-popup-registration material-box-neutral">
+    <button class="b-button m-button-close-popup"></button>
+    <h2 class="e-popup-registration-title">Регистрация</h2>
+
+    <h2 class="e-popup-registration-subtitle">Для регистрации сотавьте свой емейл и следуйте
+                                              инструкциям на почте</h2>
+
+    <form action="submit">
+        <input type="email" class="b-input">
+        <button type="submit" class="b-button m-button-login material-box-neutral">
+            <p class="e-button-title">Зарегистрироваться</p>
+        </button>
+    </form>
+</div>
+<div class="b-bg-js m-bg-js-top">
+    <img class="e-bg-js-img" src="images/bg-price.jpg">
+</div>
+<div class="b-under-bg">
+    <div class="e-under-bg-table">
+        <div class="e-under-bg-vertical">
+            <h1 class="b-title m-title-top">Цена на пакет</h1>
+
+            <h2 class="b-subtitle m-subtitle-top">Попробуйте бесплатно, как работает CRMTRONIC</h2>
+        </div>
+    </div>
+</div>
+<!-- Top block with title end -->
+<div class="b-container">
+    <div class="b-color-price">
+        <div class="e-color-price-container">
+            <ul class="b-color-price-list">
+                <li class="e-color-price-item e-color-price-item-blue">
+                    <img src="images/price-bg-item.jpg" class="e-color-price-bg">
+                    <div class="e-color-block material-box-neutral"
+                         style="background-image: url(&quot;images/price-bg-item.jpg&quot;);">
+                        <p class="e-color-price-item-title">Бизнес</p>
+
+                        <!-- <p class="e-color-price-item-subtitle">популярный</p> -->
+
+                        <p class="e-color-price-item-number">
+                            <span class="currency">$</span>
+                            <span class="number">59</span>
+                            <span class="month">/мес</span>
+                        </p>
+                        <p class="e-color-price-item-text">14 дней бесплатно</p>
+                        <!-- <a href="price-compare.html" class="e-color-price-item-link">
+                            <span class="e-color-price-item-link-line">Подробнее</span>
+                        </a> -->
+                        <button class="b-button m-button-sm material-box-neutral js-without-register js-overlay">
+                            <p class="e-button-title">Попробовать бесплатно</p>
+                        </button>
+                    </div>
+                    <div class="b-popup m-popup-color-price material-box-neutral m-popup-in-container"
+                         style="left: 33.5px;">
+                        <button class="b-button m-button-close-popup js-overlay"></button>
+                        <div class="e-color-price-popup">
+                            <div class="e-color-price-popup-left">
+                                <div class="e-color-block"
+                                     style="background-image: url(&quot;images/price-bg-item.jpg&quot;);">
+                                    <p class="e-color-price-item-title">Бизнес</p>
+
+                                    <p class="e-color-price-item-number">
+                                        <span class="currency">$</span>
+                                        <span class="number">59</span>
+                                        <span class="month">/мес</span>
+                                    </p>
+                                    <p class="e-color-price-item-text">Тут коротко об отличиях
+                                    </p>
+                                </div>
+                                <ul class="e-color-price-popup-list">
+                                    <li class="e-color-price-popup-item">
+                                        <p class="text">
+                                            <span class="bold">Первая классная фича</span>
+                                            в две строки
+                                        </p>
+                                    </li>
+                                    <li class="e-color-price-popup-item">
+                                        <p class="text">
+                                            <span class="bold">Вторая классная</span>
+                                            фича
+                                        </p>
+                                    </li>
+                                    <li class="e-color-price-popup-item">
+                                        <p class="text">
+                                            <span class="bold">Третья классная</span>
+                                            фича из списка
+                                        </p>
+                                    </li>
+                                    <li class="e-color-price-popup-item">
+                                        <p class="text">
+                                            <span class="bold">И еще одна,</span>
+                                            последняя
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="e-color-price-popup-right">
+                                <h2 class="e-color-price-popup-title">Это пример закголовка на три строчки, который описывает наш товар</h2>
+
+                                <p class="e-color-price-popup-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                                <p class="e-color-price-popup-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                <button class="b-button m-button-sm material-box-neutral js-without-register js-overlay">
+                                    <p class="e-button-title">Купить</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="b-color-detail-list">
+                <li class="e-color-detail-item m-color-detail-item-blue">
+                    <p class="e-color-detail-item-title">«Бизнес» включает</p>
+
+                    <p class="e-color-detail-item-subtitle">Все инструменты по созданию эффективных продаж:</p>
+                    <ul class="e-color-detail-item-list">
+
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">обработка входящих заявок</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">учет сделок</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">расчет сделки</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">установка статусов сделок</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">ведение клиентской базы</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">сегментация клиентов через теги и фильтры</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">задачи и напоминания</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">встроенная IP-телефония</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">удаленный доступ и контроль в режиме on-line</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">премиум поддержка</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">статистика продаж</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">рассылка email и sms</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">интеграция с сайтом</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">скрипты продаж</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">настройка прав доступа для сотрудников</span>
+                        </li>
+                        <li class="e-color-detail-item-list-item">
+                            <span class="text">система лояльности</span>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<footer class="b-footer">
+    <div class="b-container">
+        <nav class="b-navigation m-navigation-purple">
+            <ul class="e-navigation-list">
+                <li class="e-navigation-item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Возможности</a>
+                </li>
+                <li class="e-navigation-item active">
+                    <a href="#">Цены</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Компания</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+            <button class="b-button m-button-login m-button-login-two-lines material-box-neutral js-overlay">
+                <a href="#">
+                    <p class="e-button-title">Попробовать</p>
+
+                    <p class="e-button-subtitle">бесплатно 30 дней</p>
+                </a>
+            </button>
+        </nav>
+        <div class="e-footer-logo-container">
+            <a href="#">
+                <img src="images/crmtronic-logo-new.png">
+            </a>
+        </div>
+        <p class="e-footer-copywrite">
+            copywrite (c) 2015
+        </p>
+    </div>
+</footer>
+</div>
+<!-- Content end -->
+<!--jQuery-->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/jquery.scrollstop.min.js"></script>
+<script src="js/lightslider.js"></script>
+<!-- ScrollBar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Global js -->
+<!-- Global js -->
+<script type="text/javascript" src="js/global.js"></script>
+<!--jQuery end-->
+</body>
+</html>

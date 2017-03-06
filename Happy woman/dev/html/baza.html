@@ -1,0 +1,65 @@
+@@include('components/group/top.html')
+<section class="bg-fix">
+  @@include('components/header.html')
+  @@include('components/first-screen.html', {
+    "image": "bg-top2.png",
+    "title": "ДОБРО ПОЖАЛОВАТЬ",
+    "subtitle": "<h3 class='e-first-subtitle m-first-subtitle-big'>в мир ценных и практичных знаний</h3>",
+    "page": "baza"
+  })
+  <div id="second" class="b-news-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2 class="b-t">Факультет развития женственности и сексуальности:</h2>
+        </div>
+      </div>
+      <ul class="b-news-list row">
+        @@loop('components/news.html', [
+        {
+        "image": "p5.jpg",
+        "subtitle": "Что-то по",
+        "title": "здоровью"
+        },
+        {
+        "image": "p6.jpg",
+        "subtitle": "Быть",
+        "title": "женственной"
+        },
+        {
+        "image": "p5.jpg",
+        "subtitle": "Что-то по",
+        "title": "здоровью"
+        },
+        {
+        "image": "p6.jpg",
+        "subtitle": "Быть",
+        "title": "женственной"
+        },
+        {
+        "image": "p5.jpg",
+        "subtitle": "Что-то по",
+        "title": "здоровью"
+        },
+        {
+        "image": "p7.jpg",
+        "subtitle": "Как стать",
+        "title": "успешной"
+        }
+        ])
+      </ul>
+      <div class="b-button-container row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <a href="#" class="b-button m-button-green m-button-sm">
+                                <span class="e-button-container anim">
+                                                                    <span class="t"><span class="c"><span class="e-button-text"><span class="e-button-text-b">Больше статей</span></span></span></span>
+                                </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('components/form-last.html')
+</section>
+
+@@include('components/group/bottom.html')

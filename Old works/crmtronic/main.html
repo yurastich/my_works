@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/font-icons.css">
+    <link rel="stylesheet" type="text/css" href="style/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<!-- Loader -->
+<div id="loader">
+    <div class="loader-icon fa fa-spin colored-border"></div>
+</div>
+<!-- Loader end -->
+<!-- Content -->
+<div class="b-wrap b-wrap-main">
+<div class="b-overlay"></div>
+<!-- Top block with title -->
+<header class="b-header">
+    <div class="e-header-right-content">
+        <nav class="b-navigation">
+            <ul class="e-navigation-list">
+                <li class="e-navigation-item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Возможности</a>
+                </li>
+                <li class="e-navigation-item active">
+                    <a href="#">Цены</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Компания</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="m-popup-container">
+            <button class="b-button m-button-register-header js-popup-login">
+                <p class="e-button-title">Войти</p>
+            </button>
+            <div class="b-login-popup material-box-neutral">
+                <div class="e-login-popup-container">
+                    <h2 class="e-login-title">Войдите</h2>
+
+                    <form action="submit" class="e-login-popup-form">
+                        <input type="email" placeholder="Емейл" class="e-login-input m-login-input-email">
+                        <input type="text" placeholder="Пароль" class="e-login-input m-login-input-password">
+                        <div class="b-checkbox">
+                            <input type="checkbox" id="remember-me" class="e-checkbox-check">
+                            <label for="remember-me" class="e-checkbox-checkbox-view"></label>
+                            <label for="remember-me" class="e-checkbox-text">Запомнить меня</label>
+                        </div>
+                        <button type="submit" class="b-button m-button-login material-box-neutral">
+                            <p class="e-button-title">Войти</p>
+                        </button>
+                    </form>
+                    <a href="#" class="e-login-link">Забыли пароль? Нажмите здесь</a>
+                </div>
+                <button class="b-button m-button-without-register js-without-register">
+                    <p class="e-button-title">Еще не зарегистрированы?</p>
+                </button>
+
+            </div>
+        </span>
+        <button class="b-button m-button-login m-button-login-two-lines material-box-neutral">
+            <a href="#">
+                <p class="e-button-title">Попробовать</p>
+
+                <p class="e-button-subtitle">бесплатно 30 дней</p>
+            </a>
+        </button>
+        <ul class="b-languages-list">
+            <li class="e-languages-item material-box-neutral active">
+                <a href="#">
+                    <img src="images/flag-rus.png">
+                </a>
+            </li>
+            <li class="e-languages-item material-box-neutral">
+                <a href="#">
+                    <img src="images/flag-gb.png">
+                </a>
+            </li>
+            <li class="e-languages-item material-box-neutral">
+                <a href="#">
+                    <img src="images/flag-uk.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="e-header-logo">
+        <a href="#" class="e-header-logo-img-container">
+            <img src="images/crmtronic-logo-new.png">
+        </a>
+    </div>
+    <button class="e-menu-button js-header-menu">
+        <i class="fa fa-bars"></i>
+    </button>
+</header>
+<div class="b-popup m-popup-registration material-box-neutral">
+    <button class="b-button m-button-close-popup"></button>
+    <h2 class="e-popup-registration-title">Регистрация</h2>
+
+    <h2 class="e-popup-registration-subtitle">Для регистрации сотавьте свой емейл и следуйте
+                                              инструкциям на почте</h2>
+
+    <form action="submit">
+        <input type="email" class="b-input">
+        <button type="submit" class="b-button m-button-login material-box-neutral">
+            <p class="e-button-title">Зарегистрироваться</p>
+        </button>
+    </form>
+</div>
+<div class="b-container-image-top">
+    <div class="b-bg-js m-bg-js-top">
+        <img class="e-bg-js-img" src="images/bg-main.jpg">
+    </div>
+    <div class="b-main-block-top">
+        <div class="b-main-block-top-link-container">
+            <div class="b-container m-container-big">
+                <div class="e-main-block-top-title-container">
+                    <h2 class="e-main-block-top-title">Some text about main page</h2>
+
+                    <h2 class="e-main-block-top-subtitle">Легко организуйте в своей компании профессиональную
+                                                          автоматизированную систему продаж!</h2>
+                </div>
+                <div class="b-top-link-container">
+                    <ul class="e-top-link-list">
+                        <li class="e-top-link-item m-top-link-item-purple">
+                            <a href="#professionally">
+                                <span class="e-link-table"><span class="e-link-vertical"><span
+                                        class="e-link-horizontal">Профессионально</span></span></span>
+                            </a>
+                        </li>
+                        <li class="e-top-link-item m-top-link-item-green">
+                            <a href="#easily"><span class="e-link-table"><span class="e-link-vertical"><span
+                                    class="e-link-horizontal">Легко</span></span></span>
+                            </a>
+                        </li>
+                        <li class="e-top-link-item m-top-link-item-blue">
+                            <a href="#intuitively"><span class="e-link-table"><span class="e-link-vertical"><span
+                                    class="e-link-horizontal">Интуитивно</span></span></span>
+                            </a>
+                        </li>
+                        <li class="e-top-link-item m-top-link-item-orange">
+                            <a href="#flexibly"><span class="e-link-table"><span class="e-link-vertical"><span
+                                    class="e-link-horizontal">Гибко</span></span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button class="b-button m-button-info-line m-main">
+            <p class="e-button-title">Попробовать</p>
+        </button>
+        <span class="e-main-block-top-or">или</span>
+        <button class="b-button m-button-info-line m-main">
+            <p class="e-button-title">Хочу подробнее</p>
+        </button>
+        <a href="#scroll" class="e-main-block-top-arrow"></a>
+    </div>
+</div>
+<!-- Top block with title end -->
+<div id="scroll" class="b-main-slider">
+    <div class="b-container m-container-big">
+        <div class="e-main-slider-background">
+            <img src="">
+        </div>
+        <h1 id="professionally" class="b-title">Профессионально</h1>
+
+        <h2 class="b-subtitle">Немного текста о наших сервисах и всем такоем
+                               очень хороший текст</h2>
+
+        <div class="e-main-slider-container-list">
+            <ul class="e-main-slider-list">
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Управляете сделками1
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Организуйте свою схему проведения клиентов по всей сделке, отмечайте статусы сделок, используйте модуль скриптов продаж для того, чтобы внедрить проверенные методы продаж, ставьте сотрудникам задачи по сделкам (позвонить, написать письмо и т.д)</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Создайте2
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Создайте3
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Создайте4
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Создайте5
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Создайте1
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Создайте1
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Создайте1
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Создайте1
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+                <li class="e-main-slide-item">
+                    <div class="e-main-slide-item-text-container">
+                        <h2 class="e-main-slide-item-title b-color-line-before">Создайте1
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <p class="e-main-slide-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+                    </div>
+                    <div class="e-main-slide-item-image-container">
+                        <img src="images/test-screen.png" class="e-main-slide-item-image">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="b-pager-container material-box-neutral">
+    <div class="b-container m-container-big">
+        <ul class="b-pager-list">
+            <li class="e-pager-item active">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii1.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Лиды</p>
+            </li>
+            <li class="e-pager-item">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii2.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Клиенты</p>
+            </li>
+            <li class="e-pager-item">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii3.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Сделки</p>
+            </li>
+            <li class="e-pager-item">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii4.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Продажи</p>
+            </li>
+            <li class="e-pager-item">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii5.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Касания</p>
+            </li>
+            <li class="e-pager-item">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii6.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Менеджмент</p>
+            </li>
+            <li class="e-pager-item">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii7.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Планирование</p>
+            </li>
+            <li class="e-pager-item">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii8.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Анализ</p>
+            </li>
+            <li class="e-pager-item">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii9.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Документы</p>
+            </li>
+            <li class="e-pager-item">
+                <div class="e-pager-item-img-container"><span class="vertical-center"><span class="text-center"><img
+                        src="images/ii10.png"
+                        alt=""></span></span>
+                </div>
+                <p class="e-pager-item-title">Безопасность</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="b-container m-container-big">
+    <div class="b-mac">
+        <h2 id="easily" class="b-title">Предсказуемо и надежно</h2>
+
+        <h2 class="b-subtitle">Немного текста о наших сервисах и всем такоем
+                               очень хороший текст</h2>
+
+        <div class="e-mac-text-container">
+            <div class="e-mac-text-cont">
+                <div class="e-mac-text-icon-container">
+                    <div class="b-vr-md">
+                        <div class="e-vr-md-v">
+                            <div class="e-vr-md-h">
+                                <span class="icon-Forma1-23"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="e-mac-text-content">
+                    <h3 class="e-mac-title">Не важно какой у вас опыт</h3>
+                    <p class="e-mac-text">Вам не нужно разбираться в продажах, не нужно посещать тренинги и семинары по созданию отдела продаж.</p>
+                </div>
+            </div>
+            <div class="e-mac-text-cont">
+                <div class="e-mac-text-icon-container">
+                    <div class="b-vr-md">
+                        <div class="e-vr-md-v">
+                            <div class="e-vr-md-h">
+                                <span class="icon-Forma1-13"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="e-mac-text-content">
+                    <h3 class="e-mac-title">Встроенная система обучения продажам</h3>
+                    <p class="e-mac-text">В CRM уже предусмотрена система обучения продажам (через геймификацию), например по внедрению скриптов продаж, регламентов, системы мотивации через KPI и цели, и система управления продажами.</p>
+                </div>
+            </div>
+            <div class="e-mac-text-cont">
+                <div class="e-mac-text-icon-container">
+                    <div class="b-vr-md">
+                        <div class="e-vr-md-v">
+                            <div class="e-vr-md-h">
+                                <span class="icon-Forma14"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="e-mac-text-content">
+                    <h3 class="e-mac-title">Простые шаги, быстрые результаты</h3>
+                    <p class="e-mac-text">Вы легко выстроите профессиональную систему продаж без опыта. Простые шаги, ответы на вопросы, и вы получаете эффективную систему продаж в вашей компании.</p>
+                </div>
+            </div>
+        </div>
+            <span class="img-container">
+                <img src="images/mac.png">
+            </span>
+    </div>
+</div>
+<div class="b-bg-js b-info-line m-info-line-img">
+    <img class="e-bg-js-img" src="images/road.jpg">
+    <div class="b-container">
+        <p class="e-info-line-text">Попробовать
+            <span class="bold-text">бесплатную версию</span>
+                                    на 30 дней и
+            <span class="bold-text">настройку CRM</span>
+                                    тоже бесплатно
+        </p>
+        <button class="b-button m-button-info-line">
+            <p class="e-button-title">Попробовать</p>
+        </button>
+    </div>
+</div>
+<div class="b-iphone">
+    <div class="b-container m-container-big">
+        <h2 id="flexibly" class="b-title">Гибко</h2>
+
+        <h2 class="b-subtitle">Немного текста о наших сервисах и всем такоем
+                               очень хороший текст</h2>
+        <ul class="e-iphone-list">
+            <li class="e-iphone-item">
+                <div class="e-iphone-item-square">
+                    <span class="num">01</span>
+                </div>
+                <div class="e-iphone-item-text">
+                    <p class="title">СИСТЕМА РАБОТАЕТ
+                                     НА ЛЮБОМ УСТРОЙСТВЕ:</p>
+
+                    <p class="text">Tнастольный компьютер, планшет
+                                    телефон. Работайте из любой
+                                    точки мира без технических
+                                    ограничений</p>
+                </div>
+            </li>
+            <li class="e-iphone-item">
+                <div class="e-iphone-item-square">
+                    <span class="num">02</span>
+                </div>
+                <div class="e-iphone-item-text">
+                    <p class="title">НАСТРОЙКА ПОД ЛЮБОЙ
+                                     БИЗНЕС</p>
+
+                    <p class="text">Гибкие настройки позволяют
+                                    адаптировать систему под любой
+                                    бизнес, независимо от того,
+                                    какие товары и услуги вы продаете.</p>
+                </div>
+            </li>
+            <li class="e-iphone-item">
+                <div class="e-iphone-item-square">
+                    <span class="num">03</span>
+                </div>
+                <div class="e-iphone-item-text">
+                    <p class="title">ГИБКАЯ ПЛАТФОРМА
+                                     ДЛЯ ИНТЕГРАЦИИ</p>
+
+                    <p class="text">В системе предусмотрен API
+                                    функционал для подключения
+                                    любых сервисов, к которым вы
+                                    уже привыкли и используете в
+                                    своем бизнесе (1С, системы
+                                    рассылки емейл и смс, системы
+                                    сбора лидов, статистики и прочее)</p>
+                </div>
+            </li>
+            <li class="e-iphone-item">
+                <div class="e-iphone-item-square">
+                    <span class="num">04</span>
+                </div>
+                <div class="e-iphone-item-text">
+                    <p class="title">НАСТРОЙКА РАБОЧЕГО
+                                     СТОЛА “ПОД СЕБЯ”</p>
+
+                    <p class="text">Выберите подходящие вам
+                                    виджеты (модули вывода той
+                                    или иной информации) на
+                                    главной странице. Вам больше
+                                    не нужно долго искать своду по
+                                    задачам, звонкам, сделкам,
+                                    лидам. Все это выводится в
+                                    сводке на рабочем столе.</p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="b-player m-player-overlay">
+    <div class="e-player-content">
+        <span class="e-player-content-img"><img src="images/icon-play.png"></span>
+        <p class="e-player-content-text">Click To watch demo</p>
+    </div>
+    <iframe id="ytplayer" type="text/html" width="640" height="780"
+            src="http://www.youtube.com/embed/eT8sMLnwYMA" frameborder="0"></iframe>
+</div>
+<div class="b-intuitively">
+    <div class="b-container m-container-big">
+        <h2 id="intuitively" class="b-title">Интуитивно</h2>
+
+        <h2 class="b-subtitle">Немного текста о наших клиентах и всем такоем
+                               очень хороший текст</h2>
+
+        <!--<p class="e-intuitively-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>-->
+        <!--<ul class="e-intuitively-list">-->
+        <!--<li class="e-intuitively-item">-->
+        <!--<div class="item-content-img">-->
+        <!--<span class="img-container"><span class="image-center"><img src="images/f-icon-1.png"></span></span>-->
+        <!--</div>-->
+        <!--<p class="item-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat. et dolore magnam aliquam quaerat.</p>-->
+        <!--</li>-->
+        <!--<li class="e-intuitively-item">-->
+        <!--<div class="item-content-img">-->
+        <!--<span class="img-container"><span class="image-center"><img src="images/f-icon-2.png"></span></span>-->
+        <!--</div>-->
+        <!--<p class="item-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam </p>-->
+        <!--</li>-->
+        <!--<li class="e-intuitively-item">-->
+        <!--<div class="item-content-img">-->
+        <!--<span class="img-container"><span class="image-center"><img src="images/f-icon-3.png"></span></span>-->
+        <!--</div>-->
+        <!--<p class="item-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat. et dolore magnam </p>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <ul class="b-process-list m-process-list-big">
+            <li class="e-process-item m-process-item-purple material-box-neutral">
+                <div class="b-image-center">
+                    <div class="e-image-center-vertical">
+                        <div class="e-image-center-horizontal">
+                            <span class="icon-Forma1-2"></span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="e-process-item-title">Интуитивная
+                                                 настройка системы</h2>
+
+                <p class="process-item-text">Вам не нужно искать тот или иной фунционал, долго разбираться в справке, либо просить помощи техподдержки. Все интуитивно просто, нет лишних элементов, вам остается просто начать работу</p>
+            </li>
+            <li class="e-process-item m-process-item-green material-box-neutral">
+                <div class="b-image-center">
+                    <div class="e-image-center-vertical">
+                        <div class="e-image-center-horizontal">
+                            <span class="icon-Forma1-12"></span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="e-process-item-title">Система подсказок и
+                                                 пошаговые инструкции</h2>
+
+                <p class="process-item-text">Первое, что вы увидите,
+                                             зайдя в crmtronic – это
+                                             систему подсказок: как
+                                             работать в системе вам и вашим
+                                             сотрудникам, с чего начать и
+                                             какой следующий шаг для
+                                             настройки того или иного
+                                             функционала.</p>
+            </li>
+            <li class="e-process-item m-process-item-blue material-box-neutral">
+                <div class="b-image-center">
+                    <div class="e-image-center-vertical">
+                        <div class="e-image-center-horizontal">
+                            <span class="icon-Forma12"></span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="e-process-item-title">Фокус на самом
+                                                 важном</h2>
+
+                <p class="process-item-text">Благодаря интуитивному
+                                             интерфейсу система не
+                                             отвлекает вас от самого
+                                             важного – выстраивания
+                                             системы продаж и контроля
+                                             над компанией. Вам достаточно
+                                             внести все базовые настройки,
+                                             дальше управлять компанией
+                                             можно в несколько
+                                             кликов мышкой.</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="b-info-line m-info-line-blue">
+    <div class="b-container">
+        <p class="e-info-line-text">Попробовать
+            <span class="bold-text">бесплатную версию</span>
+                                    на 30 дней и
+            <span class="bold-text">настройку CRM</span>
+                                    тоже бесплатно
+        </p>
+        <button class="b-button m-button-info-line">
+            <p class="e-button-title">Попробовать</p>
+        </button>
+    </div>
+</div>
+<div class="b-slider-clients js-slider-dynamic">
+    <div class="b-container m-container-big">
+        <ul class="e-slider-clients-list">
+            <li class="e-slider-clients-item m-slider-clients-item-ava">
+                <div class="e-slider-clients-item-text-block material-box-neutral">
+                    <div class="b-square">
+                        <div class="e-square-cube">
+                        </div>
+                        <span class="e-square-content">
+                            <img src="images/icon-lamp.png">
+                        </span>
+                    </div>
+                    <div class="e-slider-clients-item-people-block">
+                        <div class="people-img-container b-block-center">
+                            <div class="people-photo e-block-center">
+                                <img src="images/cl-ava.jpg">
+                            </div>
+                        </div>
+                        <p class="people-text">Андрей Кравцов, Google</p>
+
+                        <p class="people-text">Маунтин-вью</p>
+
+                        <p class="people-text m-people-link">google.com</p>
+                    </div>
+                    <div class="e-slider-clients-item-content">
+                        <h2 class="b-title-with-before b-color-line-before">
+                            наша цель - это идея
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <div class="e-slider-clients-item-text-cont">
+                            <p class="e-slider-clients-item-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="e-slider-clients-item-img-container">
+                    <img src="images/client.jpg" class="e-slider-clients-item-img">
+                </div>
+            </li>
+            <li class="e-slider-clients-item m-slider-clients-item-ava">
+                <div class="e-slider-clients-item-text-block material-box-neutral">
+                    <div class="b-square">
+                        <div class="e-square-cube">
+                        </div>
+                        <span class="e-square-content">
+                            <img src="images/icon-lamp.png">
+                        </span>
+                    </div>
+                    <div class="e-slider-clients-item-people-block">
+                        <div class="people-img-container b-block-center">
+                            <div class="people-photo e-block-center">
+                                <img src="images/cl-ava.jpg">
+                            </div>
+                        </div>
+                        <p class="people-text">Андрей Кравцов, Google</p>
+
+                        <p class="people-text">Маунтин-вью</p>
+
+                        <p class="people-text m-people-link">google.com</p>
+                    </div>
+                    <div class="e-slider-clients-item-content">
+                        <h2 class="b-title-with-before b-color-line-before">
+                            наша цель - это идея
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <div class="e-slider-clients-item-text-cont">
+                            <p class="e-slider-clients-item-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="e-slider-clients-item-img-container">
+                    <img src="images/client.jpg" class="e-slider-clients-item-img">
+                </div>
+            </li>
+            <li class="e-slider-clients-item m-slider-clients-item-ava">
+                <div class="e-slider-clients-item-text-block material-box-neutral">
+                    <div class="b-square">
+                        <div class="e-square-cube">
+                        </div>
+                        <span class="e-square-content">
+                            <img src="images/icon-lamp.png">
+                        </span>
+                    </div>
+                    <div class="e-slider-clients-item-people-block">
+                        <div class="people-img-container b-block-center">
+                            <div class="people-photo e-block-center">
+                                <img src="images/cl-ava.jpg">
+                            </div>
+                        </div>
+                        <p class="people-text">Андрей Кравцов, Google</p>
+
+                        <p class="people-text">Маунтин-вью</p>
+
+                        <p class="people-text m-people-link">google.com</p>
+                    </div>
+                    <div class="e-slider-clients-item-content">
+                        <h2 class="b-title-with-before b-color-line-before">
+                            наша цель - это идея
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <div class="e-slider-clients-item-text-cont">
+                            <p class="e-slider-clients-item-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="e-slider-clients-item-img-container">
+                    <img src="images/client.jpg" class="e-slider-clients-item-img">
+                </div>
+            </li>
+            <li class="e-slider-clients-item m-slider-clients-item-ava">
+                <div class="e-slider-clients-item-text-block material-box-neutral">
+                    <div class="b-square">
+                        <div class="e-square-cube">
+                        </div>
+                        <span class="e-square-content">
+                            <img src="images/icon-lamp.png">
+                        </span>
+                    </div>
+                    <div class="e-slider-clients-item-people-block">
+                        <div class="people-img-container b-block-center">
+                            <div class="people-photo e-block-center">
+                                <img src="images/cl-ava.jpg">
+                            </div>
+                        </div>
+                        <p class="people-text">Андрей Кравцов, Google</p>
+
+                        <p class="people-text">Маунтин-вью</p>
+
+                        <p class="people-text m-people-link">google.com</p>
+                    </div>
+                    <div class="e-slider-clients-item-content">
+                        <h2 class="b-title-with-before b-color-line-before">
+                            наша цель - это идея
+                            <span class="e-color-line-before-line"></span>
+                        </h2>
+                        <div class="e-slider-clients-item-text-cont">
+                            <p class="e-slider-clients-item-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="e-slider-clients-item-img-container">
+                    <img src="images/client.jpg" class="e-slider-clients-item-img">
+                </div>
+            </li>
+        </ul>
+        <div class="e-slider-clients-controls">
+            <div class="e-slider-clients-controls-center-content">
+                <button class="e-button-slider-clients js-button-slider-clients-left">
+                    <span><img src="images/client-left.png"></span>
+                </button>
+                <div class="e-slider-clients-controls-round">
+                    <p class="text">
+                        <span class="num">1</span>
+                        /
+                        <span class="all-num"></span>
+                    </p>
+                </div>
+                <button class="e-button-slider-clients js-button-slider-clients-right">
+                    <span><img src="images/client-right.png"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="b-our-clients">
+    <div class="b-container m-container-big">
+        <h2 class="b-title">Наши клиенты</h2>
+
+        <h2 class="b-subtitle">Немного текста о наших клиентах и всем такоем
+                               очень хороший текст</h2>
+        <ul class="e-our-clients-list">
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-1.png" alt=""></span></span></span>
+                </a>
+            </li>
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-2.png" alt=""></span></span></span>
+                </a>
+            </li>
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-3.png" alt=""></span></span></span>
+                </a>
+            </li>
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-4.png" alt=""></span></span></span>
+                </a>
+            </li>
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-5.png" alt=""></span></span></span>
+                </a>
+            </li>
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-6.png" alt=""></span></span></span>
+                </a>
+            </li>
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-7.png" alt=""></span></span></span>
+                </a>
+            </li>
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-8.png" alt=""></span></span></span>
+                </a>
+            </li>
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-9.png" alt=""></span></span></span>
+                </a>
+            </li>
+            <li class="e-our-clients-item material-box-neutral">
+                <a href="#">
+                    <span class="img-container"><span class="vertical-middle"><span class="horizontal-middle"><img
+                            src="images/p-icon-10.png" alt=""></span></span></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="b-bg-js b-info-line m-info-line-img-big m-info-line-with-popup m-info-line-img m-with-img">
+    <img class="e-bg-js-img" src="images/tables.jpg">
+    <div class="b-container e-info-line-block-with-popup">
+        <h2 class="e-info-line-title">Название вебинара</h2>
+
+        <h2 class="e-info-line-subtitle">18 января 2016</h2>
+        <h2 class="e-info-line-subtitle">в 18:00 по МСК</h2>
+
+        <p class="e-info-line-text">
+            Как заставить клиентов покупать повторно
+        </p>
+        <div class="e-info-line-button-container">
+            <button class="b-button m-button-info-line js-open-pop-web">
+                <p class="e-button-title">Записаться</p>
+            </button>
+            <button class="b-button m-button-info-line">
+                <p class="e-button-title">Все вебинары</p>
+            </button>
+        </div>
+    </div>
+    <div class="b-popup m-popup-registration m-popup-subscribe m-popup-in-block material-box-neutral">
+        <button class="b-button m-button-close-popup"></button>
+        <h2 class="e-popup-registration-title">Принять участие в вебинаре</h2>
+
+        <h2 class="e-popup-registration-subtitle">Для участия укажите свои имя, телефон и email</h2>
+
+        <form action="submit">
+            <div class="e-container-input">
+                <input type="text" class="b-input" placeholder="Имя">
+                <input type="email" class="b-input" placeholder="Email">
+                <input type="text" class="b-input" placeholder="Телефон">
+            </div>
+            <button type="submit" class="b-button m-button-login material-box-neutral">
+                <p class="e-button-title">Зарегистрироваться</p>
+            </button>
+        </form>
+    </div>
+
+</div>
+<div class="b-news">
+    <div class="b-container m-container-big">
+        <h2 class="b-title">Последние статьи</h2>
+
+        <div class="b-news-big b-bg-js">
+            <img class="e-bg-js-img" src="images/strong.jpg">
+            <div class="e-news-big-container">
+                <h2 class="e-news-big-title">Как заставить клиентов
+                                             покупать повторно</h2>
+                <p class="e-news-big-date">6 января 2016</p>
+                <p class="e-news-big-text">Узнайте 17 причин, почему уже обратившиеся к вам вдруг покупают в другой компании и почему вы узнаете об этом слишком поздно.</p>
+                <a href="#" class="e-news-big-link">Подробнее</a>
+            </div>
+        </div>
+
+        <ul class="e-news-list">
+            <li class="e-news-item">
+                <div class="e-news-item-img-container">
+                    <div class="e-news-item-img">
+                        <img src="images/rec-1.jpg" alt="">
+                    </div>
+                </div>
+                <p class="e-news-item-title">Заголовок для статьи</p>
+            </li>
+            <li class="e-news-item">
+                <div class="e-news-item-img-container">
+                    <div class="e-news-item-img">
+                        <img src="images/rec-2.jpg" alt="">
+                    </div>
+                </div>
+                <p class="e-news-item-title">Заголовок номер
+                                             два</p>
+            </li>
+            <li class="e-news-item">
+                <div class="e-news-item-img-container">
+                    <div class="e-news-item-img">
+                        <img src="images/rec-3.jpg" alt="">
+                    </div>
+                </div>
+                <p class="e-news-item-title">Заголовок еще одной записи</p>
+            </li>
+            <li class="e-news-item">
+                <div class="e-news-item-img-container">
+                    <div class="e-news-item-img">
+                        <img src="images/rec-1.jpg" alt="">
+                    </div>
+                </div>
+                <p class="e-news-item-title">Заголовок еще одной записи</p>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="b-info-line m-info-line-orange">
+    <div class="b-container">
+        <p class="e-info-line-text">Попробовать
+            <span class="bold-text">бесплатную версию</span>
+                                    на 30 дней и
+            <span class="bold-text">настройку CRM</span>
+                                    тоже бесплатно
+        </p>
+        <button class="b-button m-button-info-line">
+            <p class="e-button-title">Попробовать</p>
+        </button>
+    </div>
+</div>
+<footer class="b-footer">
+    <div class="b-container m-container-big">
+        <ul class="b-footer-list-container">
+            <li class="e-footer-item-container">
+                <h3 class="e-footer-list-title">
+                    <span class="e-footer-list-title-text">О компании</span>
+                </h3>
+                <ul class="e-footer-list">
+                    <li class="e-footer-item">
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">Блог</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">О компании</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">Вакансии</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="e-footer-item-container">
+                <h3 class="e-footer-list-title">
+                    <span class="e-footer-list-title-text">Поддержка</span>
+                </h3>
+                <ul class="e-footer-list">
+                    <li class="e-footer-item">
+                        <a href="#">Инструкции</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">Вебинары</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">Вопросы и ответы</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">Написать нам</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="e-footer-item-container">
+                <h3 class="e-footer-list-title">
+                    <span class="e-footer-list-title-text">Партнерам</span>
+                </h3>
+                <ul class="e-footer-list">
+                    <li class="e-footer-item">
+                        <a href="#">Стать деллером</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">Франшиза</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">Инвесторам</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="e-footer-item-container">
+                <h3 class="e-footer-list-title">
+                    <span class="e-footer-list-title-text">CRMTRONIC</span>
+                </h3>
+                <ul class="e-footer-list">
+                    <li class="e-footer-item">
+                        <a href="#">Возможности</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">Тарифы</a>
+                    </li>
+                    <li class="e-footer-item">
+                        <a href="#">Сравнение тарифов</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="b-footer-feedback">
+            <button class="b-button m-button-login m-button-login-two-lines material-box-neutral js-overlay">
+                <a href="#">
+                    <p class="e-button-title">Попробовать</p>
+
+                    <p class="e-button-subtitle">бесплатно 30 дней</p>
+                </a>
+            </button>
+            <ul class="e-footer-feedback-list">
+                <li class="e-footer-feedback-item">Тел.:
+                    <a href="tel:+380442839809" class="e-footer-feedback-item-phone">+38 (044) 283-98-09</a>
+                </li>
+                <li class="e-footer-feedback-item">Тел.:
+                    <a href="tel:+78009878798" class="e-footer-feedback-item-phone">+7 (800) 987-87-98</a>
+                </li>
+            </ul>
+            <div class="e-footer-logo-container">
+                <a href="#">
+                    <img src="images/crmtronic-logo-new.png">
+                </a>
+            </div>
+            <p class="e-footer-copywrite">
+                © 2015
+            </p>
+        </div>
+        <div class="e-footer-text-container">
+            <a href="#" class="e-footer-text">Договор оферта</a>
+
+            <a href="#" class="e-footer-text">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- Content end -->
+<!--jQuery-->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.scrollstop.min.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/lightslider.js"></script>
+<!-- ScrollBar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Global js -->
+<script type="text/javascript" src="js/global.js"></script>
+<!--jQuery end-->
+</body>
+</html>

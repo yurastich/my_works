@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ArtGrad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" href="fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
+    <script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css"
+          media="screen"/>
+    <script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css"
+          media="screen"/>
+    <script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/markerwithlabel.js"></script>
+    <script src="js/circletype.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/global.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="b-wrap">
+<header class="b-header">
+    <div class="b-container-sm">
+        <div class="e-header-logo">
+            <a href="index.html">
+                <img src="img/logo-header.png">
+            </a>
+        </div>
+        <div class="e-header-logo-second">
+            <a href="#">
+                <img src="img/logo-header-2.png">
+            </a>
+        </div>
+        <nav class="b-navigation">
+            <ul class="e-navigation-list">
+                <li class="e-navigation-item">
+                    <a href="#1">Детское пространство</a>
+                    <ul class="navigation-submenu">
+                        <li class="navigation-submenu-list">
+                            <a href="about-us.html">о центре</a>
+                        </li>
+                        <li class="navigation-submenu-list">
+                            <a href="#">Новости и публикации</a>
+                        </li>
+                        <li class="navigation-submenu-list">
+                            <a href="photoGallery.html">фотогалерея</a>
+                        </li>
+                        <li class="navigation-submenu-list">
+                            <a href="feedback.html">задайте вопрос</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="e-navigation-item m-navigation-item-blue">
+                    <a href="#2">Развиваем и обучаем</a>
+                    <ul class="navigation-submenu">
+                        <li class="navigation-submenu-list">
+                            <a href="learning.html">Методики развития</a>
+                        </li>
+                        <li class="navigation-submenu-list">
+                            <a href="#">Обучающие занятия</a>
+                        </li>
+                        <li class="navigation-submenu-list">
+                            <a href="teachers.html">Преподаватели</a>
+                        </li>
+                        <li class="navigation-submenu-list">
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li class="navigation-submenu-list">
+                            <a href="#">Расписание занятий</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="e-navigation-item m-navigation-item-blue">
+                    <a href="teachers.html">преподаватели</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#4">Цены</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="e-button-header">
+            <a href="#">Записаться на занятия</a>
+        </button>
+    </div>
+</header>
+<section class="b-artGrad">
+    <div class="e-artGrad-parallax-first"></div>
+    <div class="e-artGrad-parallax-second"></div>
+    <div class="e-artGrad-parallax-third"></div>
+    <div class="b-container-sm">
+        <div class="e-artGrad-logo" id="1">
+            <img src="img/f-logo.png">
+        </div>
+        <h1 class="e-artGrad-title">Детский образовательный центр</h1>
+
+        <h2 class="e-artGrad-subtitle">«Арт Град»</h2>
+
+        <p class="e-artGrad-text">Вы мечтаете организовать развитие, образование и досуг своего ребенка максимально лучшим способом. Но не всегда бывает свободное время. Мы поможем. Детский образовательный центр «Арт Град» специализируется на данных вопросах.
+            <button class="e-artGrad-button">
+                <a href="about-us.html">Подробнее о центре</a>
+            </button>
+        </p>
+    </div>
+</section>
+<section class="b-roads">
+    <div class="b-container">
+        <h2 class="b-title">развиваем и обучаем</h2>
+
+        <h2 class="b-subtitle">• путеводитель по знаниям •</h2>
+        <button class="b-button e-roads-top-button">
+            <a href="learning.html">Перейти в раздел</a>
+        </button>
+        <div class="e-roads-content hr-1">
+            <h2 class="e-roads-content-title">Керамическая мастерская</h2>
+
+            <p class="e-roads-content-text">Керамическое дело, уходит своими корнями
+                                            в дометаллическую эпоху. Раскопки в ареале цивилизации Хараппы и на Декане выявили остатки глиняных сосудов ...</p>
+        </div>
+        <div class="e-roads-content hr-2">
+            <h2 class="e-roads-content-title">лавка скульпторов</h2>
+
+            <p class="e-roads-content-text">Острота композиционных и пространственных решений, разнообразие пластического языка, оригинальные образы и формы — предмет изучения ...</p>
+        </div>
+        <div class="e-roads-content hr-3">
+            <h2 class="e-roads-content-title">Улица гончаров</h2>
+
+            <p class="e-roads-content-text">Издревле гончарные изделия пользовались огромным успехом. Ведь без посуды мы не смогли бы готовить и хранить еду, а без чашек и сосудов попить воды ...</p>
+        </div>
+        <div class="e-roads-content hr-4">
+            <h2 class="e-roads-content-title">вкусный переулок</h2>
+
+            <p class="e-roads-content-text">Керамическое дело, уходит своими корнями в дометаллическую эпоху. Раскопки в ареале цивилизации Хараппы и на Декане выявили остатки глиняных сосудов ...</p>
+        </div>
+        <div class="e-roads-content hr-5">
+            <h2 class="e-roads-content-title">Speaking square</h2>
+
+            <p class="e-roads-content-text">Острота композиционных и пространственных решений, разнообразие пластического языка, оригинальные образы и формы — предмет изучения ...</p>
+        </div>
+        <div class="e-roads-content hr-6">
+            <h2 class="e-roads-content-title">исторический центр</h2>
+
+            <p class="e-roads-content-text">Издревле гончарные изделия пользовались огромным успехом. Ведь без посуды мы не смогли бы готовить и хранить еду, а без чашек и сосудов попить воды ...</p>
+        </div>
+        <div class="e-roads-content hr-7">
+            <h2 class="e-roads-content-title">живописный квартал</h2>
+
+            <p class="e-roads-content-text">Издревле гончарные изделия пользовались огромным успехом. Ведь без посуды мы не смогли бы готовить и хранить еду, а без чашек и сосудов попить воды ...</p>
+        </div>
+        <div class="e-roads-content hr-8">
+            <h2 class="e-roads-content-title">шахматный городок</h2>
+
+            <p class="e-roads-content-text">Издревле гончарные изделия пользовались огромным успехом. Ведь без посуды мы не смогли бы готовить и хранить еду, а без чашек и сосудов попить воды ...</p>
+        </div>
+        <div class="e-roads-content hr-9">
+            <h2 class="e-roads-content-title">танцплощадь</h2>
+
+            <p class="e-roads-content-text">Издревле гончарные изделия пользовались огромным успехом. Ведь без посуды мы не смогли бы готовить и хранить еду, а без чашек и сосудов попить воды ...</p>
+        </div>
+    </div>
+    <button class="b-button">
+        <a href="learning.html">Смотреть все программы</a>
+    </button>
+</section>
+<section class="b-teacher">
+    <div class="b-container">
+        <h2 class="b-title">наши преподаватели</h2>
+
+        <h2 class="b-subtitle">• приятно познакомиться •</h2>
+        <ul class="e-teacher-list">
+            <li class="e-teacher-item m-teacher-item-1">
+                <a href="teachers.html">
+                    <div class="e-teacher-item-img-container">
+                        <span><img src="img/photo-1.png"></span>
+                    </div>
+                    <span class="e-teacher-name">Вера Ивановна - Этикет</span>
+                </a>
+            </li>
+            <li class="e-teacher-item m-teacher-item-2">
+                <a href="teachers.html">
+                    <div class="e-teacher-item-img-container">
+                        <span><img src="img/photo-2.png"></span>
+                    </div>
+                    <span class="e-teacher-name">Степан Иванов - исскуство</span>
+                </a>
+            </li>
+            <li class="e-teacher-item m-teacher-item-3">
+                <a href="teachers.html">
+                    <div class="e-teacher-item-img-container">
+                        <span><img src="img/photo-3.png"></span>
+                    </div>
+                    <span class="e-teacher-name">Степан Иванов - исскуство</span>
+                </a>
+            </li>
+            <li class="e-teacher-item m-teacher-item-4">
+                <a href="teachers.html">
+                    <div class="e-teacher-item-img-container">
+                        <span><img src="img/photo-4.png"></span>
+                    </div>
+                    <span class="e-teacher-name">Анна Ивановна - История</span>
+                </a>
+            </li>
+            <li class="e-teacher-item m-teacher-item-5">
+                <a href="teachers.html">
+                    <div class="e-teacher-item-img-container">
+                        <span><img src="img/photo-5.png"></span>
+                    </div>
+                    <span class="e-teacher-name">Андрей Иванов - Кондитер</span>
+                </a>
+            </li>
+            <li class="e-teacher-item m-teacher-item-6">
+                <a href="teachers.html">
+                    <div class="e-teacher-item-img-container">
+                        <span><img src="img/photo-6.png"></span>
+                    </div>
+                    <span class="e-teacher-name">Степан Иванов - исскуство</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="b-slider">
+    <div class="e-teacher-parallax-first"></div>
+    <div class="e-teacher-parallax-second"></div>
+    <div class="e-teacher-parallax-third"></div>
+    <div class="b-container-sm">
+        <h2 class="b-title">расписание и цены</h2>
+
+        <h2 class="b-subtitle">• выберите одно или несколько занятий •</h2>
+
+        <h2 class="e-slider-descriptions">В детском образовательном центре «Арт Град» вы сможете найти более 10-ти обучающих программ на люьой вкус</h2>
+
+        <div class="h-slider-container">
+            <ul class="e-slider-list">
+                <li class="e-slider-item">
+                    <span class="e-slider-item-img-container"><img src="img/ch-1.jpg"></span>
+                    <div class="h-slider-item-container-content">
+                        <p class="e-slider-item-title">Рисование</p>
+
+                        <p class="e-slider-item-date">19 августа 2015</p>
+
+                        <div class="e-slider-item-detail-container">
+                            <div class="e-slider-item-detail h-detail-years">
+                                <p class="detail-number">3-14</p>
+
+                                <p class="detail-description">возрастная
+                                                              группа</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-quantity">
+                                <p class="detail-number">6</p>
+
+                                <p class="detail-description">учеников
+                                                              в группе</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-price">
+                                <p class="detail-number">2 100</p>
+
+                                <p class="detail-description">руб. / занятие</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="e-slider-item">
+                    <span class="e-slider-item-img-container"><img src="img/ch-2.jpg"></span>
+                    <div class="h-slider-item-container-content">
+                        <p class="e-slider-item-title">Актерское мастерство</p>
+
+                        <p class="e-slider-item-date">20 августа 2015</p>
+
+                        <div class="e-slider-item-detail-container">
+                            <div class="e-slider-item-detail h-detail-years">
+                                <p class="detail-number">8-14</p>
+
+                                <p class="detail-description">возрастная
+                                                              группа</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-quantity">
+                                <p class="detail-number">15</p>
+
+                                <p class="detail-description">учеников
+                                                              в группе</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-price">
+                                <p class="detail-number">2 800</p>
+
+                                <p class="detail-description">руб. / занятие</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="e-slider-item">
+                    <span class="e-slider-item-img-container"><img src="img/ch-3.jpg"></span>
+                    <div class="h-slider-item-container-content">
+                        <p class="e-slider-item-title">Вокал</p>
+
+                        <p class="e-slider-item-date">21 августа 2015</p>
+
+                        <div class="e-slider-item-detail-container">
+                            <div class="e-slider-item-detail h-detail-years">
+                                <p class="detail-number">5-7</p>
+
+                                <p class="detail-description">возрастная
+                                                              группа</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-quantity">
+                                <p class="detail-number">10</p>
+
+                                <p class="detail-description">учеников
+                                                              в группе</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-price">
+                                <p class="detail-number">1 400</p>
+
+                                <p class="detail-description">руб. / занятие</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="e-slider-item">
+                    <span class="e-slider-item-img-container"><img src="img/ch-1.jpg"></span>
+                    <div class="h-slider-item-container-content">
+                        <p class="e-slider-item-title">Рисование</p>
+
+                        <p class="e-slider-item-date">19 августа 2015</p>
+
+                        <div class="e-slider-item-detail-container">
+                            <div class="e-slider-item-detail h-detail-years">
+                                <p class="detail-number">3-14</p>
+
+                                <p class="detail-description">возрастная
+                                                              группа</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-quantity">
+                                <p class="detail-number">6</p>
+
+                                <p class="detail-description">учеников
+                                                              в группе</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-price">
+                                <p class="detail-number">2 100</p>
+
+                                <p class="detail-description">руб. / занятие</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="e-slider-item">
+                    <span class="e-slider-item-img-container"><img src="img/ch-2.jpg"></span>
+                    <div class="h-slider-item-container-content">
+                        <p class="e-slider-item-title">Актерское мастерство</p>
+
+                        <p class="e-slider-item-date">20 августа 2015</p>
+
+                        <div class="e-slider-item-detail-container">
+                            <div class="e-slider-item-detail h-detail-years">
+                                <p class="detail-number">8-14</p>
+
+                                <p class="detail-description">возрастная
+                                                              группа</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-quantity">
+                                <p class="detail-number">15</p>
+
+                                <p class="detail-description">учеников
+                                                              в группе</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-price">
+                                <p class="detail-number">2 800</p>
+
+                                <p class="detail-description">руб. / занятие</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="e-slider-item">
+                    <span class="e-slider-item-img-container"><img src="img/ch-3.jpg"></span>
+                    <div class="h-slider-item-container-content">
+                        <p class="e-slider-item-title">Вокал</p>
+
+                        <p class="e-slider-item-date">21 августа 2015</p>
+
+                        <div class="e-slider-item-detail-container">
+                            <div class="e-slider-item-detail h-detail-years">
+                                <p class="detail-number">5-7</p>
+
+                                <p class="detail-description">возрастная
+                                                              группа</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-quantity">
+                                <p class="detail-number">10</p>
+
+                                <p class="detail-description">учеников
+                                                              в группе</p>
+                            </div>
+                            <div class="e-slider-item-detail h-detail-price">
+                                <p class="detail-number">1 400</p>
+
+                                <p class="detail-description">руб. / занятие</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="e-slider-prev"></button>
+            <button class="e-slider-next"></button>
+        </div>
+        <button class="b-button h-button-slider">
+            <a href="#">Перейти в раздел</a>
+        </button>
+    </div>
+</section>
+<section class="b-photo-gallery">
+    <div class="e-photo-gallery-parallax-first"></div>
+    <div class="e-photo-gallery-parallax-second"></div>
+    <div class="e-photo-gallery-parallax-third"></div>
+    <div class="b-container">
+        <h2 class="b-title">ФОТОГАЛЕРЕЯ</h2>
+
+        <h2 class="b-subtitle">• наши звезды •</h2>
+
+        <div class="h-photo-gallery-container">
+            <ul class="e-photo-gallery-list">
+                <li class="e-photo-gallery-item">
+                    <img src="img/ch-4.jpg">
+                </li>
+                <li class="e-photo-gallery-item">
+                    <img src="img/ch-5.jpg">
+                </li>
+                <li class="e-photo-gallery-item">
+                    <img src="img/ch-6.jpg">
+                </li>
+                <li class="e-photo-gallery-item">
+                    <img src="img/ch-1.jpg">
+                </li>
+                <li class="e-photo-gallery-item">
+                    <img src="img/ch-2.jpg">
+                </li>
+                <li class="e-photo-gallery-item">
+                    <img src="img/ch-3.jpg">
+                </li>
+            </ul>
+        </div>
+        <button class="b-button m-button-blue">
+            <a href="photoGallery.html">Перейти в раздел</a>
+        </button>
+    </div>
+</section>
+<section class="b-question">
+    <div class="b-container">
+        <h2 class="b-title">Задайте вопрос</h2>
+
+        <h2 class="b-subtitle">• нам очень важно ваше мнение •</h2>
+
+        <form action="submit" class="b-form">
+            <input type="text" class="e-form-input" placeholder="Ваше имя">
+            <input type="text" class="e-form-input" placeholder="Телефон или E-mail">
+            <textarea name="" id="" cols="30" rows="4" class="e-form-input" placeholder="Задайте ваш вопрос"></textarea>
+
+            <div class="b-form-social">
+                <span class="e-form-social-text">Войти как</span>
+                <a href="#" class="e-form-social-item-icon icon-1"></a>
+                <a href="#" class="e-form-social-item-icon icon-2"></a>
+                <a href="#" class="e-form-social-item-icon icon-3"></a>
+                <a href="#" class="e-form-social-item-icon icon-4"></a>
+                <a href="#" class="e-form-social-item-icon icon-5"></a>
+                <a href="#" class="e-form-social-item-icon icon-6"></a>
+            </div>
+            <button type="submit" class="b-button m-button-red">
+                <a href="#">Отправить</a>
+            </button>
+        </form>
+    </div>
+</section>
+<section class="b-map">
+    <div class="b-container-sm">
+        <h2 class="b-title">найти нас</h2>
+
+        <h2 class="b-subtitle">• смотрите, это очень просто! •</h2>
+
+        <p class="e-map-description">Детский образовательный центр «Арт Град» находится на территории музейного комплекса
+        </p>
+
+        <p class="e-map-description">«Новый Иерусалим», по адресу: г. Истра, Новый Иерусалим,</p>
+
+        <p class="e-map-description">e-mail; info@art-grad.ru, тел.
+            <a href="tel:8 777 727 72 77">8 777 727 72 77</a>
+        </p>
+    </div>
+    <div id="googleMap"></div>
+
+</section>
+<footer class="b-footer">
+    <div class="b-container">
+        <ul class="e-footer-social">
+            <li class="e-footer-social-icon fb">
+                <a href="#"></a>
+            </li>
+            <li class="e-footer-social-icon tw">
+                <a href="#"></a>
+            </li>
+            <li class="e-footer-social-icon vk">
+                <a href="#"></a>
+            </li>
+        </ul>
+        <div class="h-list-footer-container">
+            <ul class="e-footer-list">
+                <li class="e-footer-item">
+                    <a href="#">Детское пространство</a>
+                </li>
+                <li class="e-footer-item">
+                    <a href="#">о центре</a>
+                </li>
+                <li class="e-footer-item">
+                    <a href="#">Новости и публикации</a>
+                </li>
+                <li class="e-footer-item">
+                    <a href="#">фотогалерея</a>
+                </li>
+                <li class="e-footer-item">
+                    <a href="#">задайте вопрос</a>
+                </li>
+            </ul>
+            <ul class="e-footer-list">
+                <li class="e-footer-item">
+                    <a href="#">Развиваем и обучаем</a>
+                </li>
+                <li class="e-footer-item">
+                    <a href="#">Методики развития</a>
+                </li>
+                <li class="e-footer-item">
+                    <a href="#">Обучающие занятия</a>
+                </li>
+                <li class="e-footer-item">
+                    <a href="#">Преподаватели</a>
+                </li>
+                <li class="e-footer-item">
+                    <a href="#">Услуги</a>
+                </li>
+                <li class="e-footer-item">
+                    <a href="#">Расписание занятий</a>
+                </li>
+            </ul>
+            <ul class="e-footer-list">
+                <li class="e-footer-item">
+                    <a href="#">Цены</a>
+                </li>
+            </ul>
+            <ul class="e-footer-list">
+                <li class="e-footer-item">
+                    <a href="#">Записаться на занятия</a>
+                </li>
+            </ul>
+        </div>
+        <span class="e-footer-title">Детский образовательный центр «Арт Град», 2015.</span>
+    </div>
+</footer>
+</div>
+</body>
+</html>

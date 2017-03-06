@@ -1,0 +1,50 @@
+@font-face{
+    font-family: 'DINPro';
+    src: url('../fonts/DINPro-Regular.eot');
+    src: url("../fonts/DINPro-Regular.eot?#iefix") format("embedded-opentype"),
+                 url('../fonts/DINPro-Regular.woff') format('woff'),
+                 url('../fonts/DINPro-Regular.ttf') format('truetype'),
+                 url('../fonts/DINPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'KellySlab';
+    src: url('../fonts/KellySlab-Regular.eot');
+    src: url("../fonts/KellySlab-Regular.eot?#iefix") format("embedded-opentype"),
+                 url('../fonts/KellySlab-Regular.woff') format('woff'),
+                 url('../fonts/KellySlab-Regular.ttf') format('truetype'),
+                 url('../fonts/KellySlab-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'RobotoCondensed';
+    src: url('../fonts/RobotoCondensed-Light.eot');
+    src: url("../fonts/RobotoCondensed-Light.eot?#iefix") format("embedded-opentype"),
+                 url('../fonts/RobotoCondensed-Light.woff') format('woff'),
+                 url('../fonts/RobotoCondensed-Light.ttf') format('truetype'),
+                 url('../fonts/RobotoCondensed-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'RobotoCondensed';
+    src: url('../fonts/RobotoCondensed-Regular.eot');
+    src: url("../fonts/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"),
+                 url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
+                 url('../fonts/RobotoCondensed-Regular.ttf') format('truetype'),
+                 url('../fonts/RobotoCondensed-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'RobotoCondensed';
+    src: url('../fonts/Roboto-BoldCondensed.eot');
+    src: url("../fonts/Roboto-BoldCondensed.eot?#iefix") format("embedded-opentype"),
+                 url('../fonts/Roboto-BoldCondensed.woff') format('woff'),
+                 url('../fonts/Roboto-BoldCondensed.ttf') format('truetype'),
+                 url('../fonts/Roboto-BoldCondensed.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

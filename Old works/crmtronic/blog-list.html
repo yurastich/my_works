@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog list</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Google charts -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <!--ending Google charts -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style/lightslider.css">
+    <link rel="stylesheet" type="text/css" href="style/font-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<!-- Loader -->
+<div id="loader">
+    <div class="loader-icon fa fa-spin colored-border"></div>
+</div>
+<!-- Loader end -->
+<!-- Content -->
+<div class="b-wrap b-wrap-about m-wrap-default-page">
+<!-- Top block with title -->
+<div class="b-webinar-top">
+    <div class="b-popup m-popup-registration m-popup-subscribe opening material-box-neutral">
+        <button class="b-button m-button-close-popup"></button>
+        <h2 class="e-popup-registration-title">Подписаться на новости</h2>
+
+        <h2 class="e-popup-registration-subtitle">Для подписки укажите свое имя и email</h2>
+
+        <form action="submit">
+            <div class="e-container-input">
+                <input type="text" class="b-input" placeholder="Имя">
+                <input type="email" class="b-input" placeholder="Email">
+            </div>
+            <button type="submit" class="b-button m-button-login material-box-neutral">
+                <p class="e-button-title">Подписаться</p>
+            </button>
+        </form>
+    </div>
+    <div class="b-overlay"></div>
+    <header class="b-header">
+        <div class="e-header-right-content">
+            <nav class="b-navigation">
+                <ul class="e-navigation-list">
+                    <li class="e-navigation-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="e-navigation-item">
+                        <a href="#">Возможности</a>
+                    </li>
+                    <li class="e-navigation-item active">
+                        <a href="#">Цены</a>
+                    </li>
+                    <li class="e-navigation-item">
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li class="e-navigation-item">
+                        <a href="#">Компания</a>
+                    </li>
+                    <li class="e-navigation-item">
+                        <a href="#">Блог</a>
+                    </li>
+                </ul>
+            </nav>
+        <span class="m-popup-container">
+            <button class="b-button m-button-register-header js-popup-login">
+                <p class="e-button-title">Войти</p>
+            </button>
+            <div class="b-login-popup material-box-neutral">
+                <div class="e-login-popup-container">
+                    <h2 class="e-login-title">Войдите</h2>
+
+                    <form action="submit" class="e-login-popup-form">
+                        <input type="email" placeholder="Емейл" class="e-login-input m-login-input-email">
+                        <input type="text" placeholder="Пароль" class="e-login-input m-login-input-password">
+                        <div class="b-checkbox">
+                            <input type="checkbox" id="remember-me" class="e-checkbox-check">
+                            <label for="remember-me" class="e-checkbox-checkbox-view"></label>
+                            <label for="remember-me" class="e-checkbox-text">Запомнить меня</label>
+                        </div>
+                        <button type="submit" class="b-button m-button-login material-box-neutral">
+                            <p class="e-button-title">Войти</p>
+                        </button>
+                    </form>
+                    <a href="#" class="e-login-link">Забыли пароль? Нажмите здесь</a>
+                </div>
+                <button class="b-button m-button-without-register js-without-register">
+                    <p class="e-button-title">Еще не зарегистрированы?</p>
+                </button>
+
+            </div>
+        </span>
+            <button class="b-button m-button-login m-button-login-two-lines material-box-neutral">
+                <a href="#">
+                    <p class="e-button-title">Попробовать</p>
+
+                    <p class="e-button-subtitle">бесплатно 30 дней</p>
+                </a>
+            </button>
+            <ul class="b-languages-list">
+                <li class="e-languages-item material-box-neutral active">
+                    <a href="#">
+                        <img src="images/flag-rus.png">
+                    </a>
+                </li>
+                <li class="e-languages-item material-box-neutral">
+                    <a href="#">
+                        <img src="images/flag-gb.png">
+                    </a>
+                </li>
+                <li class="e-languages-item material-box-neutral">
+                    <a href="#">
+                        <img src="images/flag-uk.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="e-header-logo">
+            <a href="#" class="e-header-logo-img-container">
+                <img src="images/crmtronic-logo-new.png">
+            </a>
+        </div>
+        <button class="e-menu-button js-header-menu">
+            <i class="fa fa-bars"></i>
+        </button>
+    </header>
+    <div class="b-popup m-popup-registration material-box-neutral">
+        <button class="b-button m-button-close-popup"></button>
+        <h2 class="e-popup-registration-title">Регистрация</h2>
+
+        <h2 class="e-popup-registration-subtitle">Для регистрации сотавьте свой емейл и следуйте
+                                                  инструкциям на почте</h2>
+
+        <form action="submit">
+            <input type="email" class="b-input">
+            <button type="submit" class="b-button m-button-login material-box-neutral">
+                <p class="e-button-title">Зарегистрироваться</p>
+            </button>
+        </form>
+    </div>
+    <div class="b-bg-js m-bg-js-top">
+        <img class="e-bg-js-img" src="images/bg-china.jpg">
+    </div>
+    <div class="b-under-bg">
+        <div class="e-under-bg-table">
+            <div class="e-under-bg-vertical m-under-bg-vertical-bottom">
+                <div class="e-webinar-top-text-block">
+                    <div class="b-container m-container-big">
+                        <div class="e-webinar-top-icon-container">
+                            <div class="e-webinar-top-icon">
+                                <img src="images/webinar-icon-top.png">
+                            </div>
+                        </div>
+                        <span class="e-webinar-top-title">Несколько слов</span>
+                        <p class="e-webinar-top-subtitle">Название популярной статьи</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Top block with title end -->
+<div class="b-client-line">
+    <div class="b-container m-container-big">
+        <ul class="e-client-line-list">
+            <li class="e-client-line-item">
+                <div class="e-client-line-image-container">
+                    <div class="e-client-line-image-circle m-purple">
+                        <div class="b-vr-md">
+                            <div class="e-vr-md-v">
+                                <div class="e-vr-md-h">
+                                    <span class="icon-icon1"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="e-client-line-item-text-block">
+                    <p class="e-client-line-item-title">Заголовок 1</p>
+
+                    <p class="e-client-line-item-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesq
+                        <a href="#" class="b-more">more</a>
+                    </p>
+                </div>
+            </li>
+            <li class="e-client-line-item">
+                <div class="e-client-line-image-container">
+                    <div class="e-client-line-image-circle m-blue">
+
+                            <div class="b-vr-md">
+                                <div class="e-vr-md-v">
+                                    <div class="e-vr-md-h">
+                                        <span class="icon-icon2"></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="e-client-line-item-text-block">
+                    <p class="e-client-line-item-title">Заголовок 2</p>
+
+                    <p class="e-client-line-item-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesq
+                        <a href="#" class="b-more">more</a>
+                    </p>
+                </div>
+            </li>
+            <li class="e-client-line-item">
+                <div class="e-client-line-image-container">
+                    <div class="e-client-line-image-circle m-orange">
+
+                            <div class="b-vr-md">
+                                <div class="e-vr-md-v">
+                                    <div class="e-vr-md-h">
+                                        <span class="icon-icon3"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="e-client-line-item-text-block">
+                    <p class="e-client-line-item-title">Заголовок 3</p>
+
+                    <p class="e-client-line-item-text">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesq
+                        <a href="#" class="b-more">more</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="b-webinar-content">
+<div class="b-container m-container-big">
+<div class="e-webinar-content-left">
+<ul class="b-webinar-all-list">
+    <li class="e-webinar-all-item">
+        <div class="b-webinar-image-block">
+            <img class="e-webinar-image-block-bg" src="images/webinar-post.jpg">
+            <p class="e-webinar-image-block-title">Заголовок первой статьи
+                                                   в блоге</p>
+
+            <div class="b-webinar-link-container">
+                <a href="#" class="e-webinar-link m-webinar-link-blue">Example</a>
+                <a href="#" class="e-webinar-link m-webinar-link-blue">France</a>
+                <a href="#" class="e-webinar-link m-webinar-link-green">CRM</a>
+                <a href="#" class="e-webinar-link m-webinar-link-purple">Education</a>
+            </div>
+            <ul class="b-webinar-short-info-list">
+                <li class="e-webinar-short-info-item">
+                    <span class="e-webinar-short-info-icon"><i class="fa fa-eye"></i></span>
+                    <span class="e-webinar-short-info-number">2356</span>
+                </li>
+                <li class="e-webinar-short-info-item">
+                    <span class="e-webinar-short-info-icon"><i class="fa fa-comments"></i></span>
+                    <span class="e-webinar-short-info-number">1</span>
+                </li>
+                <li class="e-webinar-short-info-item">
+                    <span class="e-webinar-short-info-icon"><i class="fa fa-heart"></i></span>
+                    <span class="e-webinar-short-info-number">345</span>
+                </li>
+            </ul>
+        </div>
+        <div class="b-client-line m-client-line-posted">
+            <div class="e-client-line-person-block">
+                <div class="e-block-line-person-photo-container">
+                    <div class="e-block-line-person-photo">
+                        <img src="images/men-webinar.jpg">
+                    </div>
+                </div>
+                <div class="e-block-line-person-text">
+                    <p class="name">Janes Barber</p>
+
+                    <p class="position">UI Designer</p>
+
+                    <p class="date">Posted 25 October, 2015</p>
+                </div>
+            </div>
+        </div>
+        <ul class="e-webinar-all-item-text-list">
+            <li class="e-webinar-all-item-text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </li>
+            <li class="e-webinar-all-item-text">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+                <a href="#" class="b-more">Далеe</a>
+            </li>
+        </ul>
+    </li>
+    <li class="e-webinar-all-item">
+        <div class="b-webinar-image-block">
+            <img class="e-webinar-image-block-bg" src="images/webinar-post.jpg">
+            <p class="e-webinar-image-block-title">Заголовок второй статьи
+                                                   в блоге</p>
+
+            <div class="b-webinar-link-container">
+                <a href="#" class="e-webinar-link m-webinar-link-blue">Example</a>
+                <a href="#" class="e-webinar-link m-webinar-link-blue">France</a>
+                <a href="#" class="e-webinar-link m-webinar-link-green">CRM</a>
+                <a href="#" class="e-webinar-link m-webinar-link-purple">Education</a>
+            </div>
+            <ul class="b-webinar-short-info-list">
+                <li class="e-webinar-short-info-item">
+                    <span class="e-webinar-short-info-icon"><i class="fa fa-eye"></i></span>
+                    <span class="e-webinar-short-info-number">2356</span>
+                </li>
+                <li class="e-webinar-short-info-item">
+                    <span class="e-webinar-short-info-icon"><i class="fa fa-comments"></i></span>
+                    <span class="e-webinar-short-info-number">1</span>
+                </li>
+                <li class="e-webinar-short-info-item">
+                    <span class="e-webinar-short-info-icon"><i class="fa fa-heart"></i></span>
+                    <span class="e-webinar-short-info-number">345</span>
+                </li>
+            </ul>
+        </div>
+        <div class="b-client-line m-client-line-posted">
+            <div class="e-client-line-person-block">
+                <div class="e-block-line-person-photo-container">
+                    <div class="e-block-line-person-photo">
+                        <img src="images/men-webinar.jpg">
+                    </div>
+                </div>
+                <div class="e-block-line-person-text">
+                    <p class="name">Janes Barber</p>
+
+                    <p class="position">UI Designer</p>
+
+                    <p class="date">Posted 25 October, 2015</p>
+                </div>
+            </div>
+        </div>
+        <ul class="e-webinar-all-item-text-list">
+            <li class="e-webinar-all-item-text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </li>
+            <li class="e-webinar-all-item-text">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+                <a href="#" class="b-more">Далеe</a>
+            </li>
+        </ul>
+    </li>
+    <li class="e-webinar-all-item">
+        <div class="b-webinar-image-block">
+            <img class="e-webinar-image-block-bg" src="images/webinar-post.jpg">
+            <p class="e-webinar-image-block-title">Заголовок третий статьи
+                                                   в блоге</p>
+
+            <div class="b-webinar-link-container">
+                <a href="#" class="e-webinar-link m-webinar-link-blue">Example</a>
+                <a href="#" class="e-webinar-link m-webinar-link-blue">France</a>
+                <a href="#" class="e-webinar-link m-webinar-link-green">CRM</a>
+                <a href="#" class="e-webinar-link m-webinar-link-purple">Education</a>
+            </div>
+            <ul class="b-webinar-short-info-list">
+                <li class="e-webinar-short-info-item">
+                    <span class="e-webinar-short-info-icon"><i class="fa fa-eye"></i></span>
+                    <span class="e-webinar-short-info-number">2356</span>
+                </li>
+                <li class="e-webinar-short-info-item">
+                    <span class="e-webinar-short-info-icon"><i class="fa fa-comments"></i></span>
+                    <span class="e-webinar-short-info-number">1</span>
+                </li>
+                <li class="e-webinar-short-info-item">
+                    <span class="e-webinar-short-info-icon"><i class="fa fa-heart"></i></span>
+                    <span class="e-webinar-short-info-number">345</span>
+                </li>
+            </ul>
+        </div>
+        <div class="b-client-line m-client-line-posted">
+            <div class="e-client-line-person-block">
+                <div class="e-block-line-person-photo-container">
+                    <div class="e-block-line-person-photo">
+                        <img src="images/men-webinar.jpg">
+                    </div>
+                </div>
+                <div class="e-block-line-person-text">
+                    <p class="name">Janes Barber</p>
+
+                    <p class="position">UI Designer</p>
+
+                    <p class="date">Posted 25 October, 2015</p>
+                </div>
+            </div>
+        </div>
+        <ul class="e-webinar-all-item-text-list">
+            <li class="e-webinar-all-item-text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </li>
+            <li class="e-webinar-all-item-text">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+                <a href="#" class="b-more">Далеe</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<div class="b-feedback-small b-bg-js">
+    <img src="images/price-bg-item.jpg" class="e-bg-js-img">
+    <h3 class="e-feedback-title">Цитата из статьи в середине статьи</h3>
+    <h3 class="e-feedback-subtitle">Гибкие настройки позволяют адаптировать систему под любой бизнес, независимо от того, какие товары и услуги вы продаете.</h3>
+    <div class="e-feedback-small-content">
+        <form action="submit">
+            <input type="email" class="b-input" placeholder="Введите свой Email">
+            <button type="submit" class="b-button-color m-button-blue">Попробовать!</button>
+        </form>
+        <p class="e-feedback-small-text">
+            Как заставить клиентов <span class="text-attention">покупать</span> повторно.
+        </p>
+    </div>
+</div>
+<ul class="b-pagination-list">
+    <li class="e-pagination-item">
+        <a class="e-pagination-link" href="#">
+            previous
+        </a>
+    </li>
+    <li class="e-pagination-item m-pagination-item-num">
+        <a class="e-pagination-link" href="#">
+            1
+        </a>
+    </li>
+    <li class="e-pagination-item m-pagination-item-num active">
+        <a class="e-pagination-link" href="#">
+            2
+        </a>
+    </li>
+    <li class="e-pagination-item m-pagination-item-num">
+        <a class="e-pagination-link" href="#">
+            3
+        </a>
+    </li>
+    <li class="e-pagination-item m-pagination-item-num">
+        <a class="e-pagination-link" href="#">
+            4
+        </a>
+    </li>
+    <li class="e-pagination-item m-pagination-item-num">
+        <a class="e-pagination-link" href="#">
+            5
+        </a>
+    </li>
+    <li class="e-pagination-item m-pagination-item-num">
+        <a class="e-pagination-link" href="#">
+            ...
+        </a>
+    </li>
+    <li class="e-pagination-item">
+        <a class="e-pagination-link" href="#">
+            next
+        </a>
+    </li>
+</ul>
+</div>
+<div class="e-webinar-content-right">
+    <div class="b-section-block">
+        <h3 class="e-section-block-title">
+            Название раздела
+        </h3>
+        <ul class="e-section-block-list">
+            <li class="e-section-block-item">
+                <div class="e-section-block-item-photo-part">
+                    <div class="e-section-block-item-img-container b-block-center">
+                        <div class="e-section-block-item-img e-block-center">
+                            <img src="images/p-client-1.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="e-section-block-item-text">
+                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                    <a href="#" class="b-more">more</a>
+                </p>
+            </li>
+            <li class="e-section-block-item">
+                <div class="e-section-block-item-photo-part">
+                    <div class="e-section-block-item-img-container b-block-center">
+                        <div class="e-section-block-item-img e-block-center">
+                            <img src="images/p-client-2.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="e-section-block-item-text">
+                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                    <a href="#" class="b-more">more</a>
+                </p>
+            </li>
+            <li class="e-section-block-item">
+                <div class="e-section-block-item-photo-part">
+                    <div class="e-section-block-item-img-container b-block-center">
+                        <div class="e-section-block-item-img e-block-center">
+                            <img src="images/p-client-3.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="e-section-block-item-text">
+                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                    <a href="#" class="b-more">more</a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="b-section-block">
+        <h3 class="e-section-block-title">
+            Название раздела
+        </h3>
+        <ul class="e-section-block-list">
+            <li class="e-section-block-item">
+                <div class="e-section-block-item-photo-part">
+                    <div class="e-section-block-item-img-container b-block-center">
+                        <div class="e-section-block-item-img e-block-center">
+                            <img src="images/p-client-1.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="e-section-block-item-text">
+                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                    <a href="#" class="b-more">more</a>
+                </p>
+            </li>
+            <li class="e-section-block-item">
+                <div class="e-section-block-item-photo-part">
+                    <div class="e-section-block-item-img-container b-block-center">
+                        <div class="e-section-block-item-img e-block-center">
+                            <img src="images/p-client-2.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="e-section-block-item-text">
+                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                    <a href="#" class="b-more">more</a>
+                </p>
+            </li>
+            <li class="e-section-block-item">
+                <div class="e-section-block-item-photo-part">
+                    <div class="e-section-block-item-img-container b-block-center">
+                        <div class="e-section-block-item-img e-block-center">
+                            <img src="images/p-client-3.png">
+                        </div>
+                    </div>
+                </div>
+                <p class="e-section-block-item-text">
+                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                    <a href="#" class="b-more">more</a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="b-webinar-form js-scrollTop">
+        <p class="e-webinar-form-icon">
+            <i class="fa fa-envelope"></i>
+        </p>
+
+        <p class="e-webinar-form-title">Подпишись</p>
+
+        <p class="e-webinar-form-subtitle">на наши новости</p>
+
+        <form action="submit" class="e-webinar-form-form">
+            <input type="text" class="e-webinar-form-input" placeholder="example@gmail.com">
+            <button type="submit" class="e-webinar-form-button material-box-neutral">Поехали</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<footer class="b-footer">
+    <div class="b-container">
+        <nav class="b-navigation m-navigation-purple">
+            <ul class="e-navigation-list">
+                <li class="e-navigation-item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Возможности</a>
+                </li>
+                <li class="e-navigation-item active">
+                    <a href="#">Цены</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Компания</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+            <button class="b-button m-button-login m-button-login-two-lines material-box-neutral js-overlay">
+                <a href="#">
+                    <p class="e-button-title">Попробовать</p>
+
+                    <p class="e-button-subtitle">бесплатно 30 дней</p>
+                </a>
+            </button>
+        </nav>
+        <div class="e-footer-logo-container">
+            <a href="#">
+                <img src="images/crmtronic-logo-new.png">
+            </a>
+        </div>
+        <p class="e-footer-copywrite">
+            copywrite (c) 2015
+        </p>
+    </div>
+</footer>
+</div>
+<!-- Content end -->
+<!--jQuery-->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/jquery.scrollstop.min.js"></script>
+<script src="js/lightslider.js"></script>
+<!-- Global js -->
+<script type="text/javascript" src="js/global.js"></script>
+<!--jQuery end-->
+</body>
+</html>

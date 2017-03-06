@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Овко</title>
+
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style/lightslider.min.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="style/fonts.css">
+    <link rel="stylesheet" type="text/css" href="style/icon.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<div class="wrap">
+<div class="b-overlay"></div>
+<div class="b-popup-overlay" data-modal="2">
+    <div class="b-popup">
+        <div class="e-popup-header">
+            <p class="e-popup-title">
+                <span class="e-popup-icon"><i class="icon-10"></i></span>
+                Написать агентству
+            </p>
+        </div>
+        <div class="e-popup-content">
+            <form action="submit">
+                <div class="b-input-container">
+                    <textarea rows="5" class="b-input"></textarea>
+                </div>
+                <button class="b-liked">
+                    <span class="b-star"></span>
+                    <span class="e-liked-text">Добавить в избранное</span>
+                </button>
+                <button class="b-button m-button-full m-button-big">
+            <span class="t"><span class="c">
+                <span class="e-button-text">Отправить</span></span>
+            </span>
+                </button>
+            </form>
+            <div class="e-popup-sent">
+                <div class="t">
+                    <div class="c">
+                        <span class="b-sent"><span class="e-sent-icon"><i class="icon-9"></i></span><span
+                                class="e-sent-text">Отправлено</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="b-close"></button>
+    </div>
+</div>
+<div class="content">
+<header class="b-header">
+    <div class="container">
+        <div class="e-header-left">
+            <ul class="b-nav-def">
+                <li class="e-nav-def-item">
+                    <a href="#" class="b-link">Объявления</a>
+                </li>
+                <li class="e-nav-def-item">
+                    <a href="#" class="b-link">Тех. поддержка</a>
+                </li>
+            </ul>
+        </div>
+        <div class="e-header-right">
+            <ul class="b-nav-def">
+                <li class="e-nav-def-item">
+                    <a href="#" class="b-icon-text">
+                        <span class="e-icon"><i class="icon-12"></i></span>
+                        <span class="e-text">(9)</span>
+                    </a>
+                </li>
+                <li class="e-nav-def-item">
+                    <a href="#" class="b-icon-text">
+                        <span class="e-icon"><i class="icon-10"></i></span>
+                        <span class="e-text">(0)</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="b-select-container">
+                <div class="e-select-top">
+                    <span class="e-select-title">Николай Демиденко</span>
+                    <span class="b-arrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></span>
+                </div>
+                <div class="e-select-drop-panel">
+                    <ul class="b-select-drop">
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                                 <span class="e-select-drop-icon-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-icon glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+                            </span></span></span>
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Мои объявления
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+<span class="e-select-drop-icon-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-icon glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                            </span></span></span>
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Сообщения
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+<span class="e-select-drop-icon-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-icon glyphicon glyphicon-folder-open"
+                                      aria-hidden="true"></span>
+                            </span></span></span>
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Продлить аккаунт
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+<span class="e-select-drop-icon-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-icon glyphicon glyphicon-tower" aria-hidden="true"></span>
+                            </span></span></span>
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Мой профиль
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="b-link e-header-sing-in">Выйти</a>
+        </div>
+    </div>
+</header>
+<div class="b-grey-line">
+    <div class="container">
+        <span class="e-grey-line-text">Ваш аккаунт действителен до 10.09.2016</span>
+        <a href="extension.html" class="b-button m-button-sm">
+            <span class="t"><span class="c">
+                <span class="e-button-text">Продлить</span>
+            </span></span>
+        </a>
+    </div>
+</div>
+<div class="container">
+<div class="b-logo-line">
+    <a href="#" class="b-logo">
+        <span class="e-logo-img"><img src="img/logo.png"></span>
+    </a>
+    <div class="b-select-description-container">
+        <span class="e-select-description">город</span>
+        <div class="b-select-container m-select-container-middle">
+            <div class="e-select-top">
+                <span class="e-select-title">Казань</span>
+                <span class="b-arrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></span>
+            </div>
+            <div class="e-select-drop-panel m-select-left">
+                <div class="b-scroll-bar">
+                    <ul class="b-select-drop m-select-drop-sm">
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Абакан
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Азов
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Александров
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Алексин
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Анапа
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Ангарск
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Анжеро-Судженск
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                        <li class="e-select-drop-item">
+                            <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="e-logo-line-right">
+        <a href="add-ads.html" class="b-button m-button-h-dark m-button-mid">
+            <span class="t"><span class="c">
+                <span class="e-button-text">Подать объявление</span>
+            </span></span>
+        </a>
+    </div>
+</div>
+<div class="b-search-block">
+<ul class="b-search-panel">
+<li class="e-search-panel-item">
+    <div class="b-select-container m-select-container-middle">
+        <div class="t">
+            <div class="c">
+                <div class="e-select-top">
+                    <span class="e-select-title">Недвижимость</span>
+                    <span class="b-arrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="e-select-drop-panel m-select-left">
+            <div class="b-scroll-bar">
+                <ul class="b-select-drop m-select-drop-sm">
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Абакан
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Азов
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Александров
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Алексин
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Анапа
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Ангарск
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Анжеро-Судженск
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="e-search-panel-item">
+    <input type="text" class="b-input e-search-panel-input" placeholder="Адрес интересующей недвижимости">
+</li>
+<li class="e-search-panel-item">
+    <div class="b-select-container m-select-container-middle">
+        <div class="t">
+            <div class="c">
+                <div class="e-select-top">
+                    <span class="e-select-title">Кол-во комнат</span>
+                    <span class="b-arrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="e-select-drop-panel m-select-left">
+            <div class="b-scroll-bar">
+                <ul class="b-select-drop m-select-drop-sm">
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Абакан
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Азов
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Александров
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Алексин
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Анапа
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Ангарск
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    Апатиты
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</li>
+<li class="e-search-panel-item">
+    <div class="b-select-container m-select-container-middle">
+        <div class="t">
+            <div class="c">
+                <div class="e-select-top">
+                    <span class="e-select-title">Этаж</span>
+                    <span class="b-arrow"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="e-select-drop-panel m-select-left">
+            <div class="b-scroll-bar">
+                <ul class="b-select-drop m-select-drop-sm">
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    1
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                   2
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    3
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    4
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    5
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    6
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    7
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    8
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    9
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    10
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    11
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                    <li class="e-select-drop-item">
+                        <div class="e-select-drop-item-container">
+                            <span class="e-select-drop-text-container"><span class="t"><span class="c">
+                                <span class="e-select-drop-text">
+                                    12
+                                </span>
+                            </span></span></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</li>
+</ul>
+<div class="e-search-block-right">
+    <button class="b-button m-button-full m-button-big">
+            <span class="t"><span class="c">
+                <span class="e-button-text">Найти</span> <span class="e-button-icon"><i class="icon-7"></i></span>
+            </span></span>
+    </button>
+</div>
+</div>
+<div class="b-breadcrumbs-line">
+    <ul class="b-breadcrumbs-list">
+        <li class="e-breadcrumbs-item">
+            <a href="#" class="e-breadcrumbs-link">Все объявления</a>
+        </li>
+        <li class="e-breadcrumbs-item">
+            <a href="#" class="e-breadcrumbs-link">Недвижимость</a>
+        </li>
+        <li class="e-breadcrumbs-item">
+            <a href="#" class="e-breadcrumbs-link">Квартиры</a>
+        </li>
+        <li class="e-breadcrumbs-item">
+            <a href="#" class="e-breadcrumbs-link">3-комнатные</a>
+        </li>
+    </ul>
+</div>
+<div class="b-personal-header">
+    <div class="e-personal-header-left">
+        <div class="b-star"></div>
+        <p class="e-personal-title">Семья из 2-х человек</p>
+        <p class="e-personal-subtitle">Размещено сегодня в 12:48</p>
+    </div>
+    <div class="e-personal-header-right">
+        <span class="e-personal-cost">11 340 000 р.</span>
+    </div>
+</div>
+<div class="b-personal-detail">
+    <div class="e-personal-detail-big-avatar" style="background-image: url('img/a1.jpg')"></div>
+    <div class="e-personal-detail-info">
+        <div class="b-info-block">
+            <ul class="e-info-left-list">
+                <li class="e-info-left-item">Агентство</li>
+                <li class="e-info-left-item">Контактное лицо</li>
+                <li class="e-info-left-item">
+                    <div class="e-info-left-fix-button"></div>
+                </li>
+                <li class="e-info-left-item">Город</li>
+                <li class="e-info-left-item">Адрес</li>
+            </ul>
+            <ul class="e-info-right-list">
+                <li class="e-info-right-item f-m">Риэлт-Групп</li>
+                <li class="e-info-right-item">Михаил</li>
+                <li class="e-info-right-item">
+                    <button class="b-button m-button-full m-button-big m-button-icon m-button-phone">
+                        <span class="e-button-icon-container"><span class="t"><span class="c"><span
+                                class="e-button-icon"><i class="icon-6"></i></span>
+                </span></span></span>
+                        <span class="e-button-text-container"><span class="t"><span class="c"><span
+                                class="e-button-text">Показать телефон</span><span
+                                class="e-button-phone">8 (800) 432-12-14</span></span></span></span>
+                    </button>
+                    <button data-button="2" class="b-button m-button-full m-button-big m-button-icon">
+                        <span class="e-button-icon-container"><span class="t"><span class="c"><span
+                                class="e-button-icon"><i class="icon-10"></i></span>
+                </span></span></span>
+                        <span class="e-button-text-container"><span class="t"><span class="c"><span
+                                class="e-button-text">Написать сообщение</span></span></span></span>
+                    </button>
+                </li>
+                <li class="e-info-right-item">Москва</li>
+                <li class="e-info-right-item">
+                    <a href="#" class="b-link m-link-blue m-link-without-border">р-н Центральный</a>
+                </li>
+            </ul>
+        </div>
+        <p class="e-personal-detail-description">
+            Семья из двух человек (мать и сын) хочет купить квартиру в центральном районе, предпочтительно 2х комнатную, обязятельно должен быть балкон, большая кухня, чистый подъезд, не новострой.
+        </p>
+        <p class="e-personal-detail-footer">
+            Номер объявления: 1540
+        </p>
+    </div>
+</div>
+<p class="b-title-sm">Другие объявления:</p>
+<ul class="b-ads-list">
+    <li class="e-ads-item">
+        <div class="e-ads-img" style="background-image: url('img/a2.jpg')">
+            <div class="b-star m-star-blue"></div>
+        </div>
+        <a href="#" class="b-link m-link-blue">Семья из 4-х человек</a>
+        <p class="e-ads-price">950 000 р.</p>
+        <p class="e-ads-district">Центральный р-н</p>
+    </li>
+    <li class="e-ads-item">
+        <div class="e-ads-img" style="background-image: url('img/a2.jpg')">
+            <div class="b-star m-star-blue"></div>
+        </div>
+        <a href="#" class="b-link m-link-blue">Семья из 4-х человек</a>
+        <p class="e-ads-price">950 000 р.</p>
+        <p class="e-ads-district">Центральный р-н</p>
+    </li>
+    <li class="e-ads-item">
+        <div class="e-ads-img" style="background-image: url('img/a2.jpg')">
+            <div class="b-star m-star-blue"></div>
+        </div>
+        <a href="#" class="b-link m-link-blue">Семья из 4-х человек</a>
+        <p class="e-ads-price">950 000 р.</p>
+        <p class="e-ads-district">Центральный р-н</p>
+    </li>
+    <li class="e-ads-item">
+        <div class="e-ads-img" style="background-image: url('img/a2.jpg')">
+            <div class="b-star m-star-blue"></div>
+        </div>
+        <a href="#" class="b-link m-link-blue">Семья из 4-х человек</a>
+        <p class="e-ads-price">950 000 р.</p>
+        <p class="e-ads-district">Центральный р-н</p>
+    </li>
+    <li class="e-ads-item">
+        <div class="e-ads-img" style="background-image: url('img/a2.jpg')">
+            <div class="b-star m-star-blue"></div>
+        </div>
+        <a href="#" class="b-link m-link-blue">Семья из 4-х человек</a>
+        <p class="e-ads-price">950 000 р.</p>
+        <p class="e-ads-district">Центральный р-н</p>
+    </li>
+</ul>
+<div class="b-another-ads-block">
+    <p class="b-title-sm">Другие объявления:</p>
+    <ul class="b-ads-another-list">
+        <li class="e-ads-another-item">
+            <a href="" class="e-ads-link-block">
+                <div class="e-ads-another-img-container">
+                    <div class="t">
+                        <div class="c">
+                        <span class="e-ads-another-img">
+                                   <img src="img/p1.jpg">
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="b-link m-link-blue m-link-without-border">3-к квартира,  112м2</span>
+                <p class="e-ads-another-district">ул. Строителей, 15</p>
+                <p class="e-ads-another-district">м. Студенческая</p>
+                <p class="e-ads-another-price">20 000 000р.</p>
+            </a>
+        </li>
+        <li class="e-ads-another-item">
+            <a href="" class="e-ads-link-block">
+                <div class="e-ads-another-img-container">
+                    <div class="t">
+                        <div class="c">
+                        <span class="e-ads-another-img">
+                                   <img src="img/p2.jpg">
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="b-link m-link-blue m-link-without-border">3-к квартира,  112м2</span>
+                <p class="e-ads-another-district">ул. Строителей, 15</p>
+                <p class="e-ads-another-district">м. Студенческая</p>
+                <p class="e-ads-another-price">20 000 000р.</p>
+            </a>
+        </li>
+        <li class="e-ads-another-item">
+            <a href="" class="e-ads-link-block">
+                <div class="e-ads-another-img-container">
+                    <div class="t">
+                        <div class="c">
+                        <span class="e-ads-another-img">
+                                   <img src="img/p3.jpg">
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="b-link m-link-blue m-link-without-border">3-к квартира,  112м2</span>
+                <p class="e-ads-another-district">ул. Строителей, 15</p>
+                <p class="e-ads-another-district">м. Студенческая</p>
+                <p class="e-ads-another-price">20 000 000р.</p>
+            </a>
+        </li>
+        <li class="e-ads-another-item">
+            <a href="" class="e-ads-link-block">
+                <div class="e-ads-another-img-container">
+                    <div class="t">
+                        <div class="c">
+                        <span class="e-ads-another-img">
+                                   <img src="img/p1.jpg">
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="b-link m-link-blue m-link-without-border">3-к квартира,  112м2</span>
+                <p class="e-ads-another-district">ул. Строителей, 15</p>
+                <p class="e-ads-another-district">м. Студенческая</p>
+                <p class="e-ads-another-price">20 000 000р.</p>
+            </a>
+        </li>
+        <li class="e-ads-another-item">
+            <a href="" class="e-ads-link-block">
+                <div class="e-ads-another-img-container">
+                    <div class="t">
+                        <div class="c">
+                        <span class="e-ads-another-img">
+                                   <img src="img/p2.jpg">
+                        </span>
+                        </div>
+                    </div>
+                </div>
+                <span class="b-link m-link-blue m-link-without-border">3-к квартира,  112м2</span>
+                <p class="e-ads-another-district">ул. Строителей, 15</p>
+                <p class="e-ads-another-district">м. Студенческая</p>
+                <p class="e-ads-another-price">20 000 000р.</p>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+<footer class="b-footer">
+    <div class="container">
+        <ul class="b-footer-nav">
+            <li class="e-footer-nav">
+                <a href="add-ads.html" class="e-footer-nav-link">Подать объявление</a>
+            </li>
+            <li class="e-footer-nav">
+                <a href="ads-list.html" class="e-footer-nav-link">Объявления</a>
+            </li>
+            <li class="e-footer-nav">
+                <a href="personal-area.html" class="e-footer-nav-link">Мой кабинет</a>
+            </li>
+            <li class="e-footer-nav">
+                <a href="" class="e-footer-nav-link">Тех.поддержка</a>
+            </li>
+            <li class="e-footer-nav">
+                <a href="" class="e-footer-nav-link">Реклама на сайте</a>
+            </li>
+            <li class="e-footer-nav">
+                <a href="about.html" class="e-footer-nav-link">О компании</a>
+            </li>
+            <li class="e-footer-nav">
+                <a href="" class="e-footer-nav-link">Вакансии</a>
+            </li>
+        </ul>
+    </div>
+    <div class="e-footer-copyright">
+        <div class="container">
+            <span class="e-footer-copyright-text">ООО "Овко" (С) 2016</span>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="js/jquery-2.2.3.min.js"></script>
+
+<script src="js/lightslider.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/forms.js"></script>
+<script src="js/global.js"></script>
+</body>
+</html>

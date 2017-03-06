@@ -1,0 +1,271 @@
+/*
+Verstka - Dima Melnyk (Skype: biotar666)
+dima_melnyk@mail.ru
+*/
+
+html, body {
+    font-family: 'Lato-Regular';
+    font-size:   18px;
+    color:       #383e42;
+}
+
+a {
+    color:              #000000;
+    transition:         background 0.3s;
+    -webkit-transition: background 0.3s;
+    -moz-transition:    background 0.3s;
+    -o-transition:      background 0.3s;
+    -ms-transition:     background 0.3s;
+}
+
+b {
+    font-family: 'Lato-Bold';
+}
+
+strong {
+    font-family: 'Lato-Black';
+}
+
+.block {
+    display: block;
+}
+
+.ps_a {
+    position: absolute;
+}
+
+.ps_r {
+    position: relative;
+}
+
+.ps_f {
+    position: fixed;
+}
+
+.mr_b {
+    margin-bottom: 20px;
+}
+
+.mr_t {
+    margin-top: 20px;
+}
+
+.mr_l {
+    margin-left: 20px;
+}
+
+.mr_r {
+    margin-right: 20px;
+}
+
+.txt_i {
+    text-indent: 30px;
+}
+
+.txt_r {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.clearfix:after {
+    content: '';
+    clear:   both;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.width {
+    width:  960px;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#block1 {
+    padding:  50px 0 0 0;
+    position: relative;
+}
+
+.bg0 {
+    position:                absolute;
+    left:                    0;
+    top:                     0;
+    width:                   100%;
+    background:              url("../images/bx0.jpg") no-repeat center top;
+    z-index:                 0;
+    height:                  665px;
+    -webkit-background-size: cover;
+    -moz-background-size:    cover;
+    -o-background-size:      cover;
+    background-size:         cover;
+}
+
+#block1 .width {
+    position: relative;
+    z-index:  10;
+}
+
+.firstBox {
+    background:    #ffffff;
+    border-radius: 10px;
+    position:      relative;
+/ / overflow : hidden;
+    box-shadow:    0 0 20px rgba(0, 0, 0, 0.4);
+    padding:       50px;
+}
+
+.firstBox:before {
+    content:    '';
+    display:    block;
+    background: url("../images/btn_ico.png") no-repeat;
+    width:      58px;
+    height:     15px;
+    position:   absolute;
+    top:        10px;
+    left:       10px;
+}
+
+.header {
+    padding: 0px 0 0 0;
+    color:   #ffffff;
+}
+
+.valTop {
+    width:          275px;
+    display:        inline-block;
+    vertical-align: middle;
+    z-index:        0;
+    position:       relative;
+}
+
+.valTop img {
+}
+
+.topBox {
+    display:        inline-block;
+    vertical-align: middle;
+    width:          660px;
+}
+
+.logoTop {
+    margin: 0 0 0 60px;
+}
+
+.nameTop {
+    font-size:   100px;
+
+    line-height: 1;
+    margin:      20px 0;
+}
+
+.descTop {
+    font-size: 24px;
+    margin:    0px 0 0 60px;
+}
+
+.nameBox {
+    text-align:  center;
+    font-size:   30px;
+
+}
+
+.descBox {
+    text-align: center;
+    margin:     30px 0 0 0;
+}
+
+.formBox {
+    text-align: center;
+    margin:     30px 0 0 0;
+}
+
+#block2 {
+    text-align: center;
+    margin:     50px 0;
+}
+
+.footer {
+
+}
+
+.copyright {
+
+}
+
+
+
+/*MODAL OKNO*/
+.box_window {
+    width:                 700px;
+    background:            #ffffff;
+    position:              fixed;
+    top:                   100px;
+    left:                  50%;
+    overflow-y:            auto;
+    margin-left:           -350px;
+    z-index:               35;
+    display:               none;
+    -webkit-border-radius: 4px 4px 4px;
+    border-radius:         4px 4px 4px;
+    padding:               20px
+}
+
+.bw_close {
+    background: url(../images/close.png) no-repeat;
+    width:      22px;
+    height:     21px;
+    position:   absolute;
+    top:        20px;
+    right:      20px;
+    cursor:     pointer
+}
+
+.mask {
+    position:         fixed;
+    background-image: url(../images/mask.png);
+    width:            100%;
+    display:          none;
+    height:           100%;
+    z-index:          30
+}
+
+.showwind {
+    cursor: pointer
+}
+
+/* END MODAL OKNO */
+
+/*POLITIKA*/
+.politica {
+    text-align: center;
+    margin:     10px 0 0 0;
+}
+
+.politica span {
+    color:     #ffffff;
+    font-size: 12px;
+}
+
+.politika-txt {
+    height: 300px;
+}
+
+.politika-txt p {
+    margin-bottom: 15px;
+}
+
+.politika-txt strong {
+    font-weight: bold;
+}

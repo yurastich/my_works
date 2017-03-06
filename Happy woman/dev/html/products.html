@@ -1,0 +1,212 @@
+@@include('components/group/top.html')
+<section class="bg-fix">
+  @@include('components/header.html')
+  @@include('components/first-screen.html', {
+    "image": "bg-top.png",
+    "title": "ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ЖЕНСКОГО СЧАСТЬЯ",
+    "subtitle": "<h3 class='e-first-subtitle'>тут собраны лучшие ингредиенты для счастливой жизни женщины</h3>",
+    "page": "products"
+  })
+  <div id="second" class="b-slider-near">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2 class="b-t m-t-sm">
+            Наши ближайшие мероприятия:
+          </h2>
+          <div class="e-near-container">
+            <div class="swiper-container">
+              <ul class="b-near-list swiper-wrapper">
+                @@loop('components/near.html', [
+                {
+                "audio":"false",
+                "image":"f1.jpg",
+                "firstText":"Серия",
+                "secondText":"онлайн мастер-классов",
+                "date":"12,13 и 17 октября"
+                },
+                {
+                "audio":"false",
+                "image":"f2.jpg",
+                "firstText":"Серия",
+                "secondText":"онлайн мастер-классов",
+                "date":"12,13 и 17 октября"
+                },
+                {
+                "audio":"false",
+                "image":"f3.jpg",
+                "firstText":"Серия",
+                "secondText":"онлайн мастер-классов",
+                "date":"12,13 и 17 октября"
+                },
+                {
+                "audio":"false",
+                "image":"f1.jpg",
+                "firstText":"Серия",
+                "secondText":"онлайн мастер-классов",
+                "date":"12,13 и 17 октября"
+                },
+                {
+                "audio":"false",
+                "image":"f2.jpg",
+                "firstText":"Серия",
+                "secondText":"онлайн мастер-классов",
+                "date":"12,13 и 17 октября"
+                },
+                {
+                "audio":"false",
+                "image":"f3.jpg",
+                "firstText":"Серия",
+                "secondText":"онлайн мастер-классов",
+                "date":"12,13 и 17 октября"
+                },
+                {
+                "audio":"false",
+                "image":"f2.jpg",
+                "firstText":"Серия",
+                "secondText":"онлайн мастер-классов",
+                "date":"12,13 и 17 октября"
+                }
+                ])
+              </ul>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <button class="b-arrow-slider m-arrow-slider-left js-near-left"></button>
+            <button class="b-arrow-slider m-arrow-slider-right js-near-right"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sound" class="b-slider-audio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2 class="b-t">
+            Товары для счастливой жизни:
+          </h2>
+          <h3 class="b-st-icon">
+            <span class="e-st-icon-img"><img src="../img/not.png" alt=""></span>
+            <span class="e-st-icon-text">Аудио продукты</span>
+          </h3>
+          <div class="e-audio-container">
+            <div class="swiper-container">
+              <ul class="b-audio-list swiper-wrapper">
+                @@loop('components/near.html', [
+                {
+                "audio":"true",
+                "image":"f1.jpg",
+                "firstText":"Диск",
+                "secondText":"'Сила Женственности'"
+                },
+                {
+                "audio":"true",
+                "image":"f2.jpg",
+                "firstText":"Диск",
+                "secondText":"'Денежные Практики'"
+                },
+                {
+                "audio":"true",
+                "image":"f3.jpg",
+                "firstText":"Диск",
+                "secondText":"'Сексуальные Практики'"
+                },
+                {
+                "audio":"true",
+                "image":"f1.jpg",
+                "firstText":"Диск",
+                "secondText":"'Сила Женственности'"
+                },
+                {
+                "audio":"true",
+                "image":"f2.jpg",
+                "firstText":"Диск",
+                "secondText":"'Денежные Практики'"
+                },
+                {
+                "audio":"true",
+                "image":"f3.jpg",
+                "firstText":"Диск",
+                "secondText":"'Сексуальные Практики'"
+                },
+                {
+                "audio":"true",
+                "image":"f1.jpg",
+                "firstText":"Диск",
+                "secondText":"'Сила Женственности'"
+                },
+                {
+                "audio":"true",
+                "image":"f2.jpg",
+                "firstText":"Диск",
+                "secondText":"'Денежные Практики'"
+                },
+                {
+                "audio":"true",
+                "image":"f3.jpg",
+                "firstText":"Диск",
+                "secondText":"'Сексуальные Практики'"
+                },
+                {
+                "audio":"true",
+                "image":"f2.jpg",
+                "firstText":"Диск",
+                "secondText":"'Денежные Практики'"
+                }
+                ])
+              </ul>
+            </div>
+            <button class="b-arrow-slider m-arrow-slider-left js-audio-left">
+              <span class="e-arrow-slider-text">еще товары</span>
+            </button>
+            <button class="b-arrow-slider m-arrow-slider-right js-audio-right">
+              <span class="e-arrow-slider-text">еще товары</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="videos" class="b-video-courses-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h3 class="b-st-icon">
+            <span class="e-st-icon-img"><img src="../img/vid.png" alt=""></span>
+            <span class="e-st-icon-text">Видео курсы</span>
+          </h3>
+          <ul class="b-video-courses-list">
+            @@loop('components/video-curs.html', [
+            {
+            "image":"v1.jpg",
+            "title":"Коучинг &quot;Курс Женской Силы&quot;"
+            },
+            {
+            "image":"v2.jpg",
+            "title":"Коучинг &quot;Курс Женской Силы&quot;"
+            },
+            {
+            "image":"v1.jpg",
+            "title":"Коучинг &quot;Курс Женской Силы&quot;"
+            },
+            {
+            "image":"v2.jpg",
+            "title":"Коучинг &quot;Курс Женской Силы&quot;"
+            }
+            ])
+          </ul>
+          <div class="b-button-container">
+            <button type="submit" class="b-button m-button-sm">
+                                <span class="e-button-container anim">
+                                                                    <span class="t"><span class="c"><span class="e-button-text"><span class="e-button-text-b">Не знаете что выбрать? Нажмите сюда...</span></span></span></span>
+                                </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('components/form-last.html')
+</section>
+
+@@include('components/group/bottom.html')

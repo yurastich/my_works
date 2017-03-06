@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Price</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style/lightslider.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    <link rel="stylesheet" href="style/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<!-- Loader -->
+<div id="loader">
+    <div class="loader-icon fa fa-spin colored-border"></div>
+</div>
+<!-- Loader end -->
+<!-- Content -->
+<div class="b-wrap b-wrap-price">
+<div class="b-overlay"></div>
+<!-- Top block with title -->
+<header class="b-header">
+    <div class="e-header-right-content">
+        <nav class="b-navigation">
+            <ul class="e-navigation-list">
+                <li class="e-navigation-item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Возможности</a>
+                </li>
+                <li class="e-navigation-item active">
+                    <a href="#">Цены</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Компания</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="m-popup-container">
+            <button class="b-button m-button-register-header js-popup-login">
+                <p class="e-button-title">Войти</p>
+            </button>
+            <div class="b-login-popup material-box-neutral">
+                <div class="e-login-popup-container">
+                    <h2 class="e-login-title">Войдите</h2>
+
+                    <form action="submit" class="e-login-popup-form">
+                        <input type="email" placeholder="Емейл" class="e-login-input m-login-input-email">
+                        <input type="text" placeholder="Пароль" class="e-login-input m-login-input-password">
+                        <div class="b-checkbox">
+                            <input type="checkbox" id="remember-me" class="e-checkbox-check">
+                            <label for="remember-me" class="e-checkbox-checkbox-view"></label>
+                            <label for="remember-me" class="e-checkbox-text">Запомнить меня</label>
+                        </div>
+                        <button type="submit" class="b-button m-button-login material-box-neutral">
+                            <p class="e-button-title">Войти</p>
+                        </button>
+                    </form>
+                    <a href="#" class="e-login-link">Забыли пароль? Нажмите здесь</a>
+                </div>
+                <button class="b-button m-button-without-register js-without-register">
+                    <p class="e-button-title">Еще не зарегистрированы?</p>
+                </button>
+
+            </div>
+        </span>
+        <button class="b-button m-button-login m-button-login-two-lines material-box-neutral">
+            <a href="#">
+                <p class="e-button-title">Попробовать</p>
+
+                <p class="e-button-subtitle">бесплатно 30 дней</p>
+            </a>
+        </button>
+        <ul class="b-languages-list">
+            <li class="e-languages-item material-box-neutral active">
+                <a href="#">
+                    <img src="images/flag-rus.png">
+                </a>
+            </li>
+            <li class="e-languages-item material-box-neutral">
+                <a href="#">
+                    <img src="images/flag-gb.png">
+                </a>
+            </li>
+            <li class="e-languages-item material-box-neutral">
+                <a href="#">
+                    <img src="images/flag-uk.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="e-header-logo">
+        <a href="#" class="e-header-logo-img-container">
+            <img src="images/crmtronic-logo-new.png">
+        </a>
+    </div>
+    <button class="e-menu-button js-header-menu">
+        <i class="fa fa-bars"></i>
+    </button>
+</header>
+<div class="b-popup m-popup-registration material-box-neutral">
+    <button class="b-button m-button-close-popup"></button>
+    <h2 class="e-popup-registration-title">Регистрация</h2>
+
+    <h2 class="e-popup-registration-subtitle">Для регистрации сотавьте свой емейл и следуйте
+                                              инструкциям на почте</h2>
+
+    <form action="submit">
+        <input type="email" class="b-input">
+        <button type="submit" class="b-button m-button-login material-box-neutral">
+            <p class="e-button-title">Зарегистрироваться</p>
+        </button>
+    </form>
+</div>
+<div class="b-bg-js m-bg-js-top">
+    <img class="e-bg-js-img" src="images/bg-price.jpg">
+</div>
+<div class="b-under-bg">
+    <div class="e-under-bg-table">
+        <div class="e-under-bg-vertical">
+            <h1 class="b-title m-title-top">Заголовок прайса</h1>
+
+            <h2 class="b-subtitle m-subtitle-top">Немного текста о наших ценах, насколько мы хорошие
+                                                  и все остальное в таком духе</h2>
+        </div>
+    </div>
+</div>
+<!-- Top block with title end -->
+<div class="b-container">
+<div class="js-price-scroll">
+<div class="js-price-container">
+<ul class="b-color-price-list m-color-price-list-sm">
+    <li class="e-color-price-item e-color-price-item-purple">
+        <div class="e-color-block material-box-neutral">
+            <p class="e-color-price-item-title">Free</p>
+
+            <p class="e-color-price-item-number">
+                <span class="currency">$</span>
+                <span class="number">0</span>
+            </p>
+            <p class="e-color-price-item-text">30 дней бесплатно
+                                               для всех</p>
+            <a href="#" class="e-color-price-item-link">
+                <span class="e-color-price-item-link-line">Подробнее</span>
+            </a>
+            <button class="b-button m-button-sm material-box-neutral">
+                <p class="e-button-title">Попробовать</p>
+            </button>
+        </div>
+    </li>
+    <li class="e-color-price-item e-color-price-item-green">
+        <div class="e-color-block material-box-neutral">
+            <p class="e-color-price-item-title">Standart</p>
+
+            <p class="e-color-price-item-number">
+                <span class="currency">$</span>
+                <span class="number">9</span>
+            </p>
+            <p class="e-color-price-item-text">30 дней бесплатно
+                                               для всех</p>
+            <a href="#" class="e-color-price-item-link">
+                <span class="e-color-price-item-link-line">Подробнее</span>
+            </a>
+            <button class="b-button m-button-sm material-box-neutral">
+                <p class="e-button-title">Попробовать</p>
+            </button>
+        </div>
+    </li>
+    <li class="e-color-price-item e-color-price-item-blue">
+        <div class="e-color-block material-box-neutral">
+            <p class="e-color-price-item-title">Gold</p>
+
+            <p class="e-color-price-item-subtitle">popular</p>
+
+            <p class="e-color-price-item-number">
+                <span class="currency">$</span>
+                <span class="number">19</span>
+            </p>
+            <p class="e-color-price-item-text">30 дней бесплатно
+                                               для всех</p>
+            <a href="#" class="e-color-price-item-link">
+                <span class="e-color-price-item-link-line">Подробнее</span>
+            </a>
+            <button class="b-button m-button-sm material-box-neutral">
+                <p class="e-button-title">Попробовать</p>
+            </button>
+        </div>
+    </li>
+    <li class="e-color-price-item e-color-price-item-orange">
+        <div class="e-color-block material-box-neutral">
+            <p class="e-color-price-item-title">Premium</p>
+
+            <p class="e-color-price-item-number">
+                <span class="currency">$</span>
+                <span class="number">49</span>
+            </p>
+            <p class="e-color-price-item-text">30 дней бесплатно
+                                               для всех</p>
+            <a href="#" class="e-color-price-item-link">
+                <span class="e-color-price-item-link-line">Подробнее</span>
+            </a>
+            <button class="b-button m-button-sm material-box-neutral">
+                <p class="e-button-title">Попробовать</p>
+            </button>
+        </div>
+    </li>
+</ul>
+<table class="b-table">
+    <thead>
+    <tr>
+        <td class="e-table-title">
+            Так выглядит заголовок
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle m-table-subtitle-first">Первая классная фича
+                                                            в две строки
+        </td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle">Вторая классная фича; одна строка</td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle">Третья классная фича; одна строка</td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle">Еще одна фишка нашего двора</td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    </tbody>
+</table>
+<table class="b-table">
+    <thead>
+    <tr>
+        <td class="e-table-title">
+            Так выглядит заголовок
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle m-table-subtitle-first">Первая классная фича
+                                                            в две строки
+        </td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle">Вторая классная фича; одна строка</td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle">Третья классная фича; одна строка</td>
+        <td class="e-table-boolean">1 people</td>
+        <td class="e-table-boolean">3 people</td>
+        <td class="e-table-boolean">3 people</td>
+        <td class="e-table-boolean">Company</td>
+    </tr>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle">Еще одна фишка нашего двора</td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    </tbody>
+</table>
+<table class="b-table">
+    <thead>
+    <tr>
+        <td class="e-table-title">
+            Так выглядит заголовок
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle m-table-subtitle-first">Первая классная фича
+                                                            в две строки
+        </td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle">Вторая классная фича; одна строка</td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean active"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle">Третья классная фича; одна строка</td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean">100</td>
+        <td class="e-table-boolean">20</td>
+        <td class="e-table-boolean">30</td>
+    </tr>
+    <tr class="e-table-line">
+        <td class="e-table-subtitle">Еще одна фишка нашего двора</td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean"></td>
+        <td class="e-table-boolean active"></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="b-info-line">
+    <div class="b-container">
+        <p class="e-info-line-text">Попробовать
+            <span class="bold-text">бесплатную версию</span>
+                                    на 30 дней и
+            <span class="bold-text">настройку CRM</span>
+                                    тоже бесплатно
+        </p>
+        <button class="b-button m-button-info-line">
+            <p class="e-button-title">Попробовать</p>
+        </button>
+    </div>
+</div>
+<div class="b-feedback">
+    <div class="b-container">
+        <h2 class="b-title">Задайте вопрос</h2>
+
+        <h2 class="b-subtitle">Немного текста о наших ценах, насколько мы хорошие
+                               и все остальное в таком духе</h2>
+
+        <form action="submit">
+            <div class="e-feedback-left-content">
+                <div class="b-feedback-input">
+                    <label for="i1" class="e-feedback-label">Имя</label>
+                    <input type="text" class="e-feedback-input" id="i1">
+                </div>
+                <div class="b-feedback-input">
+                    <label for="i2" class="e-feedback-label">Email</label>
+                    <input type="email" class="e-feedback-input" id="i2">
+                </div>
+                <div class="b-feedback-input">
+                    <label for="i3" class="e-feedback-label">Телефон</label>
+                    <input type="text" class="e-feedback-input" id="i3">
+                </div>
+            </div>
+            <div class="e-feedback-right-content">
+                <div class="b-feedback-input">
+                    <label for="i4" class="e-feedback-label">Сообщение</label>
+                    <textarea class="e-feedback-input m-feedback-input-textarea" name="i4" id="i4"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="b-button m-button-login">
+                <p class="e-button-title">Отправить</p>
+            </button>
+        </form>
+    </div>
+</div>
+<footer class="b-footer">
+    <div class="b-container">
+        <nav class="b-navigation m-navigation-purple">
+            <ul class="e-navigation-list">
+                <li class="e-navigation-item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Возможности</a>
+                </li>
+                <li class="e-navigation-item active">
+                    <a href="#">Цены</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Отзывы</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Компания</a>
+                </li>
+                <li class="e-navigation-item">
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+            <button class="b-button m-button-login m-button-login-two-lines material-box-neutral js-overlay">
+                <a href="#">
+                    <p class="e-button-title">Попробовать</p>
+
+                    <p class="e-button-subtitle">бесплатно 30 дней</p>
+                </a>
+            </button>
+        </nav>
+        <div class="e-footer-logo-container">
+            <a href="#">
+                <img src="images/crmtronic-logo-new.png">
+            </a>
+        </div>
+        <p class="e-footer-copywrite">
+            copywrite (c) 2015
+        </p>
+    </div>
+</footer>
+</div>
+<!-- Content end -->
+<!--jQuery-->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/lightslider.js"></script>
+<!-- ScrollBar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Global js -->
+<script type="text/javascript" src="js/global.js"></script>
+<!--jQuery end-->
+</body>
+</html>

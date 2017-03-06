@@ -1,0 +1,125 @@
+body, ul, p, h1, h2, a, button {
+  margin:          0;
+  padding:         0;
+  list-style:      none;
+  text-decoration: none;
+  outline:         none;
+  border:          none;
+}
+
+button {
+  color:            inherit;
+  background-color: transparent;
+  a {
+    display: block;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+@mixin clearfix {
+  &:after {
+    visibility: hidden;
+    display:    block;
+    content:    "";
+    clear:      both;
+    height:     0;
+  }
+}
+
+.h-fix-inline-block {
+  font-size: 0;
+}
+
+$green: #00b9b3;
+$gray-blue-bg: #d7e4ed;
+$brown: #404040;
+$green-btn: #03918c;
+$gray-light: #e9f0f5;
+$gray-border: #e3e5e6;
+$attention: #ffe600;
+
+input, textarea, select {
+  -webkit-appearance: none !important;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+/// Stroke font-character
+/// $param  {Integer} $stroke - Stroke width
+/// $param  {Color}   $color  - Stroke color
+/// $return {Style}           - text-shadow
+@mixin shadow($v1, $v2, $v3, $c) {
+  -webkit-box-shadow: $v1 $v2 $v3 $c;
+  -moz-box-shadow:    $v1 $v2 $v3 $c;
+  -ms-box-shadow:     $v1 $v2 $v3 $c;
+  -o-box-shadow:      $v1 $v2 $v3 $c;
+  box-shadow:         $v1 $v2 $v3 $c;
+}
+
+@mixin filter($eff) {
+  -webkit-filter: $eff;
+  -moz-filter:    $eff;
+  -o-filter:      $eff;
+  -ms-filter:     $eff;
+  filter:         $eff;
+}
+
+@mixin stroke($stroke, $color) {
+  text-shadow: stroke($stroke, $color);
+}
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  /* Firefox 19+ */
+  &:-moz-placeholder {
+    color: $color;
+  }
+  /* Firefox 18- */
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin transform($string) {
+  -webkit-transform: $string;
+  -moz-transform:    $string;
+  -ms-transform:     $string;
+  -o-transform:      $string;
+  transform:         $string;
+}
+
+@mixin transition($string) {
+  -webkit-transition: $string;
+  -moz-transition:    $string;
+  -ms-transition:     $string;
+  -o-transition:      $string;
+  transition:         $string;
+}
+
+@mixin transition-duration($string) {
+  -webkit-transition-duration: $string;
+  -moz-transition-duration:    $string;
+  -ms-transition-duration:     $string;
+  -o-transition-duration:      $string;
+  transition-duration:         $string;
+}
+
+@mixin box-sizing($value) {
+  -webkit-box-sizing: $value;
+  -moz-box-sizing:    $value;
+  box-sizing:         $value;
+}

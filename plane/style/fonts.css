@@ -1,0 +1,48 @@
+
+/* Ubuntu Regular */
+@font-face {
+    font-family: "Ubuntu";
+    src:         url("../fonts/Ubuntu-R.eot");
+    src:         url("../fonts/Ubuntu-R.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/Ubuntu.woff") format("woff"),
+                 url("../fonts/Ubuntu.ttf") format("truetype"),
+                 url("../fonts/Ubuntu.svg") format("svg");
+    font-style:  normal;
+    font-weight: 400;
+}
+
+/* Ubuntu Light */
+@font-face {
+    font-family: "Ubuntu";
+    src:         url("../fonts/Ubuntu-L.eot");
+    src:         url("../fonts/Ubuntu-L.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/Ubuntu-Light.woff") format("woff"),
+                 url("../fonts/Ubuntu-Light.ttf") format("truetype"),
+                 url("../fonts/Ubuntu-Light.svg") format("svg");
+    font-style:  normal;
+    font-weight: 300;
+}
+
+/* Open Sans SemiBold */
+@font-face {
+    font-family: "Open Sans";
+    src:         url("../fonts/OpenSans-Semibold.eot");
+    src:         url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/OpenSans-Semibold.woff") format("woff"),
+                 url("../fonts/OpenSans-Semibold.ttf") format("truetype"),
+                 url("../fonts/OpenSans-Semibold.svg") format("svg");
+    font-style:  normal;
+    font-weight: 500;
+}
+
+/* Open Sans Bold */
+@font-face {
+    font-family: "Open Sans";
+    src:         url("../fonts/OpenSans-Bold.eot");
+    src:         url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/OpenSans-Bold.woff") format("woff"),
+                 url("../fonts/OpenSans-Bold.ttf") format("truetype"),
+                 url("../fonts/OpenSans-Bold.svg") format("svg");
+    font-style:  normal;
+    font-weight: 700;
+}
